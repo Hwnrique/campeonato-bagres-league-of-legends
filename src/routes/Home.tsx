@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import dsg from "../public/dsg.png";
 import emius from "../public/emius.png";
-import marlos from "../public/marlos.png";
 import copa94 from "../public/copa94.png";
 import maokai from "../public/maokai.jpg";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import brasil94 from "../public/brasil94.png";
-import spirit from "../public/spirit.png"
+import spirit from "../public/spirit.png";
+import yago from "../public/yago.png"
 
 const Home = () => {
   return (
@@ -33,6 +33,24 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
+            src={yago}
+            alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Útilma vaga preenchida!
+            </h3>
+            <p className="text-white text-sm">
+              Depois de muito tempo de espera a última equipe finalmente deu sua confirmação para o CBLOL. Spirit Edge chega para...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
             src={emius}
             alt="Mrcasper"
           />
@@ -48,7 +66,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -68,7 +86,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -82,12 +100,13 @@ const Home = () => {
               anunciam criação do "Brasil94"
             </h3>
             <p className="text-white text-sm">
-              Após rumores envolvendo a formação de uma nova equipe depois da dissolução da DSG, Matheus e Libni oficializaram...
+              Após rumores envolvendo a formação de uma nova equipe depois da
+              dissolução da DSG, Matheus e Libni oficializaram...
             </p>
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img className="w-full h-full object-cover" src={dsg} alt="DSG" />
@@ -100,25 +119,6 @@ const Home = () => {
               A DSG (Desgraça), organização que marcou presença na primeira
               edição do CBLOL e ficou conhecida por alcançar a final de forma
               invicta...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={marlos}
-            alt="marlos"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> É do CÃO!
-            </h3>
-            <p className="text-white text-sm">
-              O Midlaner "Raruh" é o novo reforço da Equipe CÃO para o CBLOL
-              2026. Apesar de não ter...
             </p>
           </div>
         </Link>
