@@ -155,7 +155,7 @@ const Home = () => {
             <li className="p-1">🥇 Equipe CAO</li>
             <li className="p-1">🥈 DSG (Desgraça)</li>
             <li className="p-1">🏅 BFT (Bode Fuceta)</li>
-            <li className="p-1">🏅 EQP (Equipe)</li>
+            <li className="p-1">🏅 USP</li>
           </ul>
         </div>
 
