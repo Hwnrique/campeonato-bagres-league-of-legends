@@ -1,4 +1,5 @@
 import copa94 from "../public/copa94.png";
+import { Link } from "react-router-dom";
 
 const Notice1 = () => {
   return (
@@ -8,31 +9,62 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
-              anunciam novo time
+              anunciam criação do "Brasil94"
             </h2>
             <p className="text-xl p-2">
-              Com os vazamentos que confirmaram o fim da organização DSG, o
-              atirador Matheus e o caçador Libni estão muito próximos de
-              oficializar a criação de uma nova equipe para disputar o próximo
-              split do <span className="text-cyan-600">CBLOL</span>.
+              Com rumores envolvendo a formação de uma nova equipe depois da
+              dissolução da DSG, Matheus e Libni oficializaram o lançamento de
+              seu mais novo projeto: Brasil 94, organização que já se prepara
+              para disputar o próximo split do{" "}
+              <span className="text-cyan-600">CBLOL</span>.
             </p>
             <p className="text-xl p-2">
-              Segundo apurado, os jogadores enxergam com bons olhos a parceria
-              para estruturar o projeto, que já nasce com uma meta ambiciosa:
-              montar um elenco competitivo o suficiente para brigar pelo{" "}
-              <span className="text-cyan-600">título</span>
-              {" "}no próximo split.
+              A equipe confirmou que sua line-up titular já está definida:
             </p>
-            <p className="text-xl p-2">
-              Mais informações devem ser divulgadas nas próximas semanas,
-              conforme avançam as negociações e definição da line-up.
+
+            <ul className="p-4">
+              <li className="text-xl">
+                <span className="text-cyan-600 text-xl font-bold p-2">
+                  Top:
+                </span>
+                ADC de Aluguel
+              </li>
+              <li className="text-xl">
+                <span className="text-cyan-600 text-xl font-bold p-2">
+                  Jungle:
+                </span>
+                Cartman
+              </li>
+              <li className="text-xl">
+                <span className="text-cyan-600 text-xl font-bold p-2">
+                  Mid:
+                </span>
+                Raltzx
+              </li>
+              <li className="text-xl">
+                <span className="text-cyan-600 text-xl font-bold p-2">
+                  Adc:
+                </span>
+                BTPXMatheusX
+              </li>
+              <li className="text-xl">
+                <span className="text-cyan-600 text-xl font-bold p-2">
+                  Suporte:
+                </span>
+                BladeBlack04
+              </li>
+            </ul>
+            <p className="text-xl p-2 mb-8">
+              Além dos jogadores, o Brasil 94 contará também com o experiente
+              coach Luskão, responsável por liderar o time em busca do seu
+              principal objetivo: <span className="text-cyan-600">conquistar o troféu</span>.
             </p>
             <p className="px-2">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
-              <a className="text-cyan-600" href="/">
+              <Link className="text-cyan-600" to={"/"}>
                 nosso site
-              </a>
+              </Link>
             </p>
           </div>
           <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">

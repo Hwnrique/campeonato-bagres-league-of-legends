@@ -1,4 +1,5 @@
 import marlos from "../public/marlos.png";
+import { Link } from "react-router-dom";
 
 const Notice1 = () => {
   return (
@@ -28,9 +29,9 @@ const Notice1 = () => {
             <p className="px-2">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
-              <a className="text-cyan-600" href="/">
+              <Link className="text-cyan-600" to={"/"}>
                 nosso site
-              </a>
+              </Link>
             </p>
           </div>
           <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">

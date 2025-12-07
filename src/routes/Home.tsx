@@ -8,6 +8,7 @@ import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import brasil94 from "../public/brasil94.png";
+import spirit from "../public/spirit.png"
 
 const Home = () => {
   return (
@@ -78,10 +79,10 @@ const Home = () => {
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
-              anunciam novo time
+              anunciam criação do "Brasil94"
             </h3>
             <p className="text-white text-sm">
-              Com os vazamentos que confirmaram o fim da organização DSG...
+              Após rumores envolvendo a formação de uma nova equipe depois da dissolução da DSG, Matheus e Libni oficializaram...
             </p>
           </div>
         </Link>
@@ -125,8 +126,7 @@ const Home = () => {
       <div className="w-full mt-16 text-center flex flex-col">
         <h2 className="text-white mt-16 text-3xl">
           Equipes que vão disputar o{" "}
-          <span className="text-cyan-600 font-bold">CBLOL 2026</span> até o
-          momento
+          <span className="text-cyan-600 font-bold">CBLOL 2026</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
           <img
@@ -140,8 +140,13 @@ const Home = () => {
             alt="Las Notches"
           />
           <img
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
+            className="w-40 h-40 sm:w-48 sm:h-48 md:w-62 md:h-64 hover:scale-110 transition duration-300 cursor-pointer"
             src={brasil94}
+            alt="Brasil94"
+          />
+          <img
+            className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
+            src={spirit}
             alt="Brasil94"
           />
         </div>
