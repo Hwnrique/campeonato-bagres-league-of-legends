@@ -5,7 +5,6 @@ import maokai from "../public/maokai.jpeg";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
-import brasil94 from "../public/brasil94.png";
 import spirit from "../public/spirit.png";
 import yago from "../public/yago.png";
 import brasil94off from "../public/brasil94off.png";
@@ -141,11 +140,6 @@ const Home = () => {
             className="w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
             src={notches}
             alt="Las Notches"
-          />
-          <img
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-62 md:h-64 hover:scale-110 transition duration-300 cursor-pointer"
-            src={brasil94}
-            alt="Brasil94"
           />
           <img
             className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
