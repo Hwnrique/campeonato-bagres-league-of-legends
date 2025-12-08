@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import dsg from "../public/dsg.png";
 import emius from "../public/emius.png";
-import copa94 from "../public/copa94.png";
 import maokai from "../public/maokai.jpeg";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import brasil94 from "../public/brasil94.png";
 import spirit from "../public/spirit.png";
-import yago from "../public/yago.png"
+import yago from "../public/yago.png";
+import brasil94off from "../public/brasil94off.png";
 
 const Home = () => {
   return (
@@ -33,15 +33,18 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={yago}
+            src={brasil94off}
             alt="Spirit"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Útilma vaga preenchida!
+              <span className="text-red-400">[URGENTE]:</span> B94 ENFRENTA
+              CRISE INTERNA E ENCERRA ATIVIDADES
             </h3>
             <p className="text-white text-sm">
-              Depois de muito tempo de espera a última equipe finalmente deu sua confirmação para o CBLOL. Spirit Edge chega para...
+              De última hora, a equipe Brasil 94 (B94), formada por ADC de
+              Aluguel, Cartman, Raltzx, BTPXMatheusX e BladeBlack04, não
+              disputará...
             </p>
           </div>
         </Link>
@@ -51,8 +54,28 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
+            src={yago}
+            alt="Spirit Edge"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Útilma vaga
+              preenchida!
+            </h3>
+            <p className="text-white text-sm">
+              Depois de muito tempo de espera a última equipe finalmente deu sua
+              confirmação para o CBLOL. Spirit Edge chega para...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice3"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
             src={emius}
-            alt="Mrcasper"
+            alt="Las Noches"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -66,7 +89,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -82,26 +105,6 @@ const Home = () => {
             <p className="text-white text-sm">
               O suporte Maderation(Nicolas) está oficialmente free agent e
               demonstrou interesse em...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice4"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={copa94}
-            alt="Matheus e Libni"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
-              anunciam criação do "Brasil94"
-            </h3>
-            <p className="text-white text-sm">
-              Após rumores envolvendo a formação de uma nova equipe depois da
-              dissolução da DSG, Matheus e Libni oficializaram...
             </p>
           </div>
         </Link>
