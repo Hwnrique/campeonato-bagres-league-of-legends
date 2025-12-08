@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import dsg from "../public/dsg.png";
 import emius from "../public/emius.png";
 import copa94 from "../public/copa94.png";
-import maokai from "../public/maokai.jpg";
+import maokai from "../public/maokai.jpeg";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";

@@ -1,4 +1,4 @@
-import madeira from "../public/maokai.jpg";
+import madeira from "../public/maokai.jpeg";
 import { Link } from "react-router-dom";
 
 const Notice1 = () => {
