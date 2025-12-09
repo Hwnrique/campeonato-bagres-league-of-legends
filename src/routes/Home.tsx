@@ -37,7 +37,8 @@ const Home = () => {
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta crise interna e encerra atividades!
+              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta
+              crise interna e encerra atividades!
             </h3>
             <p className="text-white text-sm">
               De última hora, a equipe Brasil 94 (B94), formada por ADC de
@@ -57,10 +58,12 @@ const Home = () => {
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span>  Spirit Edge fecha elenco para o próximo torneio do CBALOL
+              <span className="text-cyan-400">[NEWS]:</span> Spirit Edge fecha
+              elenco para o próximo torneio do CBALOL
             </h3>
             <p className="text-white text-sm">
-              Fontes próximas à organização confirmaram que, nas últimas horas, a Spirit Edge finalizou...
+              Fontes próximas à organização confirmaram que, nas últimas horas,
+              a Spirit Edge finalizou...
             </p>
           </div>
         </Link>
@@ -128,21 +131,114 @@ const Home = () => {
           <span className="text-cyan-600 font-bold">CBALOL 2026</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
-          <img
-            className="w-40 h-40 sm:w-52 sm:h-52 md:w-72 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
-            src={cao}
-            alt="CAO"
-          />
-          <img
-            className="w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
-            src={notches}
-            alt="Las Notches"
-          />
-          <img
-            className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 hover:scale-110 transition duration-300 cursor-pointer"
-            src={spirit}
-            alt="Brasil94"
-          />
+          <div className="relative group cursor-pointer">
+            <img
+              className="w-40 h-40 sm:w-52 sm:h-52 md:w-72 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
+              src={cao}
+              alt="CAO"
+            />
+            <div
+              className="absolute inset-0 bg-black/70 text-white opacity-0 
+                      group-hover:opacity-100 flex flex-col items-center 
+                      justify-center text-sm sm:text-base p-3 transition"
+            >
+              <p className="font-bold mb-2 text-red-500">CAO</p>
+              <ul>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  FearKillua
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  JDMDJ BR
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  Raruh
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  Doart
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  Big Tonho 22
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group cursor-pointer">
+            <img
+              className="w-40 h-40 sm:w-52 sm:h-52 md:w-80 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
+              src={notches}
+              alt="Las Notches"
+            />
+            <div
+              className="absolute inset-0 bg-black/70 text-white opacity-0 
+                      group-hover:opacity-100 flex flex-col items-center 
+                      justify-center text-sm sm:text-base p-3 transition"
+            >
+              <p className="font-bold mb-2 text-sky-800">Las Notches</p>
+              <ul>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  Dragão Econômico
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  Sentry
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  pspspspspspsps
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  yumekooJ
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  mrcasper
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group cursor-pointer">
+            <img
+              className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
+              src={spirit}
+              alt="Spirit"
+            />
+            <div
+              className="absolute inset-0 bg-black/70 text-white opacity-0 
+                      group-hover:opacity-100 flex flex-col items-center 
+                      justify-center text-sm sm:text-base p-3 transition"
+            >
+              <p className="font-bold mb-2 text-violet-300">Spirit Edge</p>
+              <ul>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  Rua 6
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  Kamerayda
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  Saburu
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  Raives
+                </li>
+                <li>
+                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  Belador
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
