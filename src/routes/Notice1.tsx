@@ -8,14 +8,13 @@ const Notice1 = () => {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
-              <span className="text-red-400">[URGENTE]:</span> B94 ENFRENTA
-              CRISE INTERNA E ENCERRA ATIVIDADES
+              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta crise interna e encerra atividades!
             </h2>
             <p className="text-xl p-2">
               De última hora, a equipe Brasil 94 (B94), formada por ADC de
               Aluguel, Cartman, Raltzx, BTPXMatheusX e BladeBlack04, não
               disputará mais o próximo split do{" "}
-              <span className="text-cyan-400">CBLOL</span>.
+              <span className="text-cyan-400">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
               Segundo fontes próximas à organização, o time enfrentou uma{" "}

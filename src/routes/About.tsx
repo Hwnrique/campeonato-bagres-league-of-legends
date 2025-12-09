@@ -7,7 +7,7 @@ const About = () => {
         </h1>
 
         <p className="text-white text-lg md:text-xl p-3 sm:p-4">
-          Olá! Nós somos o CBLOL – Campeonato Bagres de League of Legends, um
+          Olá! Nós somos o CBALOL – Campeonato Bagres de League of Legends, um
           grupo de amigos que organiza mini-campeonatos, partidas
           personalizadas, partidas flex e diversas outras interações coletivas.
           Criamos este grupo inicialmente com o intuito de jogar partidas
@@ -22,7 +22,7 @@ const About = () => {
         </p>
 
         <h2 className="text-cyan-600 font-bold text-2xl md:text-3xl">
-          CAMPEONATO CBLOL
+          CAMPEONATO CBALOL
         </h2>
 
         <p className="text-white text-lg md:text-xl p-3 sm:p-4">

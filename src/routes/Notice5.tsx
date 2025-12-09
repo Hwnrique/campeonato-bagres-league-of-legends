@@ -9,11 +9,11 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> DSG está fora do
-              CBLOL 2026
+              CBALOL 2026
             </h2>
             <p className="text-xl p-2">
               A DSG (Desgraça), organização que marcou presença na primeira
-              edição do <span className="text-cyan-600">CBLOL</span> e ficou conhecida por alcançar a final de forma
+              edição do <span className="text-cyan-600">CBALOL</span> e ficou conhecida por alcançar a final de forma
               invicta, não irá participar do próximo campeonato.
             </p>
             <p className="text-xl p-2">

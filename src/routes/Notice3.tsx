@@ -15,7 +15,7 @@ const Notice1 = () => {
               Após a dissolução da antiga organização DSG, Emerson “MRCasper”
               anunciou a criação de seu novo projeto, a{" "}
               <span className="text-cyan-600">Las Noches</span>, com o objetivo
-              de disputar o próximo split do CBLOL.
+              de disputar o próximo split do <span className="text-cyan-600">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
               De acordo com fontes próximas ao cenário, a nova line-up deve

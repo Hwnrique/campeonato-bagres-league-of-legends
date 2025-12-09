@@ -13,7 +13,7 @@ const Notice1 = () => {
             </h2>
             <p className="text-xl p-2">
               O suporte Maderation (Nicolas) está oficialmente free agent e
-              busca uma nova equipe para disputar o próximo split do <span className="text-cyan-600">CBLOL</span>.
+              busca uma nova equipe para disputar o próximo split do <span className="text-cyan-600">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
               O jogador, que ficou de fora da primeira edição do torneio neste

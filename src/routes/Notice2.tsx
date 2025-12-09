@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import yago from "../public/yago.png";
+import spiritLogo from "../public/spiritNotice.jpeg";
 
 const Notice1 = () => {
   return (
@@ -8,62 +8,67 @@ const Notice1 = () => {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Última vaga
-              preenchida!
+              <span className="text-cyan-400">[NEWS]:</span> Spirit Edge fecha
+              elenco para o próximo torneio do CBALOL
             </h2>
             <p className="text-xl p-2">
-              Depois de muito tempo de espera a última equipe finalmente deu sua
-              confirmação para o <span className="text-cyan-600">CBLOL</span>.
+              Fontes próximas à organização confirmaram que, nas últimas horas,
+              a Spirit Edge finalizou sua janela de transferências e definiu
+              oficialmente sua line-up para o próximo split do{" "}
+              <span className="text-cyan-600">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
-              Spirit Edge chega para completar a lista de times que irão
-              disputar a taça do campeonato no segundo split. Junto com a "Las
-              Noches" e a "Brasil94",{" "}
-              <span className="text-cyan-600">Spirit Edge</span> chega como uma
-              equipe nova e promete trazer uma lineup forte para disputar o
-              título
-            </p>
-            <p className="text-xl p-2">
-              De acordo com as informações coletadas, a lineup segue assim:
+              A escalação que disputará o campeonato é a seguinte:
             </p>
             <ul className="p-4">
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
                   Top:
                 </span>
-                Saburu
+                Rua 6
               </li>
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
                   Jungle:
                 </span>
-                Belador
+                Kamerayda
               </li>
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
                   Mid:
                 </span>
-                Power
+                Saburu
               </li>
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
                   Adc:
                 </span>
-                Raives/Magalhães
+                Raives
               </li>
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
                   Suporte:
                 </span>
-                Rua6
+                Belador
               </li>
               <li className="text-xl">
                 <span className="text-cyan-600 text-xl font-bold p-2">
-                  Vaga:
+                  Reserva:
                 </span>
-                Enzo
+                Power
               </li>
             </ul>
+            <p className="text-xl p-2">
+              Além dos cinco titulares, a equipe contará com o reserva Power —
+              reforçando o elenco para a competição.
+            </p>
+            <p className="text-xl p-2">
+              Com a definição do elenco, a <span className="text-cyan-600">Spirit Edge</span> demonstra que chega com
+              tudo para o próximo split do <span className="text-cyan-600">CBALOL</span>, apostando em uma formação que
+              mistura experiência e estratégia. A expectativa agora é acompanhar
+              o desempenho da equipe nas próximas etapas, à medida que a
+              temporada se aproxima.
+            </p>
             <p className="px-2">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
@@ -76,7 +81,7 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">
             <img
               className="rounded-md shadow-xl max-w-full h-auto"
-              src={yago}
+              src={spiritLogo}
               alt="MrCasper"
             />
           </div>

@@ -6,7 +6,7 @@ import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
-import yago from "../public/yago.png";
+import spiritNotice from "../public/spiritNotice.jpeg";
 import brasil94off from "../public/brasil94off.png";
 
 const Home = () => {
@@ -37,8 +37,7 @@ const Home = () => {
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-red-400">[URGENTE]:</span> B94 ENFRENTA
-              CRISE INTERNA E ENCERRA ATIVIDADES
+              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta crise interna e encerra atividades!
             </h3>
             <p className="text-white text-sm">
               De última hora, a equipe Brasil 94 (B94), formada por ADC de
@@ -53,17 +52,15 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={yago}
+            src={spiritNotice}
             alt="Spirit Edge"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Útilma vaga
-              preenchida!
+              <span className="text-cyan-400">[NEWS]:</span>  Spirit Edge fecha elenco para o próximo torneio do CBALOL
             </h3>
             <p className="text-white text-sm">
-              Depois de muito tempo de espera a última equipe finalmente deu sua
-              confirmação para o CBLOL. Spirit Edge chega para...
+              Fontes próximas à organização confirmaram que, nas últimas horas, a Spirit Edge finalizou...
             </p>
           </div>
         </Link>
@@ -115,11 +112,11 @@ const Home = () => {
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> DSG está fora do
-              CBLOL 2026
+              CBALOL 2026
             </h3>
             <p className="text-white text-sm">
               A DSG (Desgraça), organização que marcou presença na primeira
-              edição do CBLOL e ficou conhecida por alcançar a final de forma
+              edição do CBALOL e ficou conhecida por alcançar a final de forma
               invicta...
             </p>
           </div>
@@ -128,7 +125,7 @@ const Home = () => {
       <div className="w-full mt-16 text-center flex flex-col">
         <h2 className="text-white mt-16 text-3xl">
           Equipes que vão disputar o{" "}
-          <span className="text-cyan-600 font-bold">CBLOL 2026</span>
+          <span className="text-cyan-600 font-bold">CBALOL 2026</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
           <img
@@ -151,7 +148,7 @@ const Home = () => {
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
         <div className="w-full md:w-1/3 text-start p-8 md:p-12 rounded-lg">
           <h2 className="text-start text-white text-2xl">
-            Ranking CBLOL 2025🏆
+            Ranking CBALOL 2025🏆
           </h2>
           <ul className="text-white mt-8">
             <li className="p-1">🥇 Equipe CAO</li>
