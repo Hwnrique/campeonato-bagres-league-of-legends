@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import dsg from "../public/dsg.png";
 import emius from "../public/emius.png";
 import maokai from "../public/maokai.jpeg";
 import logo from "../public/logo.png";
@@ -8,10 +7,13 @@ import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
 import spiritNotice from "../public/spiritNotice.jpeg";
 import brasil94off from "../public/brasil94off.png";
+import bbcnotice from "../public/bbcnotice.jpeg";
+import bbc from "../public/bbc.png";
 
 const Home = () => {
   return (
     <>
+      {/* head */}
       <div className="w-full mt-10 text-center">
         <h1 className="text-white text-5xl">
           Seja <span className="text-cyan-600 font-bold">Bem-vindo</span> ao
@@ -24,6 +26,7 @@ const Home = () => {
         />
         <h2 className="text-white mt-16 text-3xl">Últimas notícias</h2>
       </div>
+      {/* notices */}
       <div className="w-11/12 mx-auto mt-16 rounded-lg h-auto md:h-[400px] flex flex-col md:flex-row justify-center overflow-hidden gap-2">
         <Link
           to="/notice1"
@@ -32,8 +35,28 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={brasil94off}
+            src={bbcnotice}
             alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Black Belt Clan
+              Entra na Disputa pelo Próximo CBALOL
+            </h3>
+            <p className="text-white text-sm">
+              A movimentação nos bastidores do competitivo brasileiro de League
+              of Legends segue intensa. Nos últimos dias...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={brasil94off}
+            alt="Spirit Edge"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -48,13 +71,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={spiritNotice}
-            alt="Spirit Edge"
+            alt="Las Noches"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -68,13 +91,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={emius}
-            alt="Las Noches"
+            alt="Madeiras"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -88,14 +111,10 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
-          <img
-            className="w-full h-full object-cover"
-            src={maokai}
-            alt="Madeiras"
-          />
+          <img className="w-full h-full object-cover" src={maokai} alt="DSG" />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> Maderation Free
@@ -107,24 +126,8 @@ const Home = () => {
             </p>
           </div>
         </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img className="w-full h-full object-cover" src={dsg} alt="DSG" />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> DSG está fora do
-              CBALOL 2026
-            </h3>
-            <p className="text-white text-sm">
-              A DSG (Desgraça), organização que marcou presença na primeira
-              edição do CBALOL e ficou conhecida por alcançar a final de forma
-              invicta...
-            </p>
-          </div>
-        </Link>
       </div>
+      {/* teams */}
       <div className="w-full mt-16 text-center flex flex-col">
         <h2 className="text-white mt-16 text-3xl">
           Equipes que vão disputar o{" "}
@@ -139,29 +142,29 @@ const Home = () => {
             />
             <div
               className="absolute inset-0 bg-black/70 text-white opacity-0 
-                      group-hover:opacity-100 flex flex-col items-center 
+                      group-hover:opacity-100 flex flex-col rounded-2xl items-center 
                       justify-center text-sm sm:text-base p-3 transition"
             >
               <p className="font-bold mb-2 text-red-500">CAO</p>
               <ul>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  <span className="text-red-500 p-1 font-bold">Top:</span>
                   FearKillua
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  <span className="text-red-500 p-1 font-bold">Jungle:</span>
                   JDMDJ BR
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  <span className="text-red-500 p-1 font-bold">Mid:</span>
                   Raruh
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  <span className="text-red-500 p-1 font-bold">Adc:</span>
                   Doart
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  <span className="text-red-500 p-1 font-bold">Suporte:</span>
                   Big Tonho 22
                 </li>
               </ul>
@@ -175,29 +178,29 @@ const Home = () => {
             />
             <div
               className="absolute inset-0 bg-black/70 text-white opacity-0 
-                      group-hover:opacity-100 flex flex-col items-center 
+                      group-hover:opacity-100 flex flex-col rounded-2xl items-center 
                       justify-center text-sm sm:text-base p-3 transition"
             >
               <p className="font-bold mb-2 text-sky-800">Las Notches</p>
               <ul>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  <span className="text-sky-800 p-1 font-bold">Top:</span>
                   Dragão Econômico
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  <span className="text-sky-800 p-1 font-bold">Jungle:</span>
                   Sentry
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  <span className="text-sky-800 p-1 font-bold">Mid:</span>
                   pspspspspspsps
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  <span className="text-sky-800 p-1 font-bold">Adc:</span>
                   yumekooJ
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  <span className="text-sky-800 p-1 font-bold">Suporte:</span>
                   mrcasper
                 </li>
               </ul>
@@ -211,36 +214,77 @@ const Home = () => {
             />
             <div
               className="absolute inset-0 bg-black/70 text-white opacity-0 
-                      group-hover:opacity-100 flex flex-col items-center 
+                      group-hover:opacity-100 flex flex-col rounded-2xl items-center 
                       justify-center text-sm sm:text-base p-3 transition"
             >
               <p className="font-bold mb-2 text-violet-300">Spirit Edge</p>
               <ul>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Top:</span>
+                  <span className="text-violet-300 p-1 font-bold">Top:</span>
                   Rua 6
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Jungle:</span>
+                  <span className="text-violet-300 p-1 font-bold">Jungle:</span>
                   Kamerayda
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Mid:</span>
+                  <span className="text-violet-300 p-1 font-bold">Mid:</span>
                   Saburu
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Adc:</span>
+                  <span className="text-violet-300 p-1 font-bold">Adc:</span>
                   Raives
                 </li>
                 <li>
-                  <span className="text-cyan-600 p-1 font-bold">Suporte:</span>
+                  <span className="text-violet-300 p-1 font-bold">
+                    Suporte:
+                  </span>
                   Belador
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group cursor-pointer">
+            <img
+              className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
+              src={bbc}
+              alt="Spirit"
+            />
+            <div
+              className="absolute inset-0 bg-black/70 text-white opacity-0 
+                      group-hover:opacity-100 flex flex-col rounded-2xl items-center 
+                      justify-center text-sm sm:text-base p-3 transition"
+            >
+              <p className="font-bold mb-2 text-yellow-400">Black Belt Clan</p>
+              <ul>
+                <li>
+                  <span className="text-yellow-400 p-1 font-bold">Top:</span>
+                  king of belts#071
+                </li>
+                <li>
+                  <span className="text-yellow-400 p-1 font-bold">Jungle:</span>
+                  BetterKindred#2502
+                </li>
+                <li>
+                  <span className="text-yellow-400 p-1 font-bold">Mid:</span>
+                  BetterZoe#31415
+                </li>
+                <li>
+                  <span className="text-yellow-400 p-1 font-bold">Adc:</span>
+                  Magalhães#071
+                </li>
+                <li>
+                  <span className="text-yellow-400 p-1 font-bold">
+                    Suporte:
+                  </span>
+                  Helsoak#br1
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
+      {/* others */}
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
         <div className="w-full md:w-1/3 text-start p-8 md:p-12 rounded-lg">
           <h2 className="text-start text-white text-2xl">
