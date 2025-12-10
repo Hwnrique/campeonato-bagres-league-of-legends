@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import emius from "../public/emius.png";
-import maokai from "../public/maokai.jpeg";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
@@ -9,6 +8,7 @@ import spiritNotice from "../public/spiritNotice.jpeg";
 import brasil94off from "../public/brasil94off.png";
 import bbcnotice from "../public/bbcnotice.jpeg";
 import bbc from "../public/bbc.png";
+import felicia from "../public/felicia.png";
 
 const Home = () => {
   return (
@@ -35,8 +35,28 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={bbcnotice}
+            src={felicia}
             alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Show de Felícia e
+              discussões internas marcam a abertura do CBALOL.
+            </h3>
+            <p className="text-white text-sm">
+              O dia 09/12 marcou o início oficial do CBALOL com o primeiro
+              confronto da temporada. Após um longo atraso na partida...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={bbcnotice}
+            alt="Spirit Edge"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -50,13 +70,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={brasil94off}
-            alt="Spirit Edge"
+            alt="Las Noches"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -71,13 +91,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={spiritNotice}
-            alt="Las Noches"
+            alt="Madeiras"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -91,13 +111,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={emius}
-            alt="Madeiras"
+            alt="Las Noches"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -110,27 +130,47 @@ const Home = () => {
             </p>
           </div>
         </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img className="w-full h-full object-cover" src={maokai} alt="DSG" />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Maderation Free
-              Agent
-            </h3>
-            <p className="text-white text-sm">
-              O suporte Maderation(Nicolas) está oficialmente free agent e
-              demonstrou interesse em...
-            </p>
-          </div>
-        </Link>
+      </div>
+      {/* tables */}
+      <div className="w-full text-white text-center">
+        <h2 className="text-white mt-20 text-3xl mb-10">
+          Tabela do Campeonato
+        </h2>
+        <table className="mx-auto text-center border">
+          <tr>
+            <th className="text-cyan-600 border p-2 font-bold text-2xl">
+              Equipe
+            </th>
+            <th className="text-cyan-600 border p-2 font-bold text-2xl">
+              Pontos Corridos
+            </th>
+          </tr>
+          <tr>
+            <td className="border p-2 text-sky-800 font-bold">Las Noches</td>
+            <td className="border p-2">1</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-red-500 font-bold">CAO</td>
+            <td className="border p-2">0</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-yellow-400 font-bold">
+              Black Belt Clan
+            </td>
+            <td className="border p-2">0</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-violet-300 font-bold">
+              Spirit Edge
+            </td>
+            <td className="border p-2">0</td>
+          </tr>
+        </table>
       </div>
       {/* teams */}
       <div className="w-full mt-16 text-center flex flex-col">
         <h2 className="text-white mt-16 text-3xl">
-          Equipes que vão disputar o{" "}
+          Equipes que estão disputando o{" "}
           <span className="text-cyan-600 font-bold">CBALOL 2026</span>
         </h2>
         <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
@@ -300,7 +340,7 @@ const Home = () => {
 
         <div className="w-full md:w-1/3 text-start p-8 md:p-12 rounded-lg">
           <h2 className="text-start text-white text-2xl">
-            Melhores Jogadores (por rota)
+            Melhores Jogadores 2025 (por rota)
           </h2>
           <ul className="text-white mt-8 border-l-4 pl-4 border-cyan-600">
             <li className="p-1">
