@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import emius from "../public/emius.png";
 import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
@@ -9,6 +8,8 @@ import brasil94off from "../public/brasil94off.png";
 import bbcnotice from "../public/bbcnotice.jpeg";
 import bbc from "../public/bbc.png";
 import felicia from "../public/felicia.png";
+import metralha from "../public/metralha.png"
+import copa64 from "../public/copa64.png"
 
 const Home = () => {
   return (
@@ -35,8 +36,26 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={felicia}
+            src={copa64}
             alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni estão de volta ao campeonato!
+            </h3>
+            <p className="text-white text-sm">
+              Após o encerramento da antiga organização Brasil 94, Matheus e Libni estão oficialmente de volta ao competitivo. A dupla...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={felicia}
+            alt="Felicia"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -50,13 +69,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={bbcnotice}
-            alt="Spirit Edge"
+            alt="BBC"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -70,13 +89,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={brasil94off}
-            alt="Las Noches"
+            alt="Brasil94"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -91,13 +110,13 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
             className="w-full h-full object-cover"
             src={spiritNotice}
-            alt="Madeiras"
+            alt="Spirit"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -107,26 +126,6 @@ const Home = () => {
             <p className="text-white text-sm">
               Fontes próximas à organização confirmaram que, nas últimas horas,
               a Spirit Edge finalizou...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={emius}
-            alt="Las Noches"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Las Noches está
-              definida!
-            </h3>
-            <p className="text-white text-sm">
-              Após a dissolução da antiga organização DSG, Emerson “MRCasper”
-              anunciou a criação de seu novo projeto...
             </p>
           </div>
         </Link>
@@ -142,28 +141,34 @@ const Home = () => {
               Equipe
             </th>
             <th className="text-cyan-600 border p-2 font-bold text-2xl">
-              Pontos Corridos
+              Pontos
             </th>
           </tr>
           <tr>
             <td className="border p-2 text-sky-800 font-bold">Las Noches</td>
-            <td className="border p-2">1</td>
+            <td className="border p-2 font-bold">1</td>
           </tr>
           <tr>
             <td className="border p-2 text-red-500 font-bold">CAO</td>
-            <td className="border p-2">0</td>
+            <td className="border p-2 font-bold">0</td>
           </tr>
           <tr>
             <td className="border p-2 text-yellow-400 font-bold">
               Black Belt Clan
             </td>
-            <td className="border p-2">0</td>
+            <td className="border p-2 font-bold">0</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-orange-500 font-bold">
+              Manos Metralha
+            </td>
+            <td className="border p-2 font-bold">0</td>
           </tr>
           <tr>
             <td className="border p-2 text-violet-300 font-bold">
               Spirit Edge
             </td>
-            <td className="border p-2">0</td>
+            <td className="border p-2 font-bold">0</td>
           </tr>
         </table>
       </div>
@@ -318,6 +323,44 @@ const Home = () => {
                     Suporte:
                   </span>
                   Helsoak#br1
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="relative group cursor-pointer">
+            <img
+              className="w-40 h-40 sm:w-48 sm:h-48 md:w-72 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
+              src={metralha}
+              alt="Metralha"
+            />
+            <div
+              className="absolute inset-0 bg-black/70 text-white opacity-0 
+                      group-hover:opacity-100 flex flex-col rounded-2xl items-center 
+                      justify-center text-sm sm:text-base p-3 transition"
+            >
+              <p className="font-bold mb-2 text-orange-500">Manos Metralha</p>
+              <ul>
+                <li>
+                  <span className="text-orange-500 p-1 font-bold">Top:</span>
+                  in a trance#xyz
+                </li>
+                <li>
+                  <span className="text-orange-500 p-1 font-bold">Jungle:</span>
+                  Cartman#18025
+                </li>
+                <li>
+                  <span className="text-orange-500 p-1 font-bold">Mid:</span>
+                  PNG Gabis#br2
+                </li>
+                <li>
+                  <span className="text-orange-500 p-1 font-bold">Adc:</span>
+                  BTPXMatheusX#br1
+                </li>
+                <li>
+                  <span className="text-orange-500 p-1 font-bold">
+                    Suporte:
+                  </span>
+                  guérisseur#br1
                 </li>
               </ul>
             </div>

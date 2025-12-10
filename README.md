@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+<h1>Site Oficial do Campeonato Bagres de League Of Legends</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Faço parte de uma pequena comunidade de League of Legends, onde nos reunimos de vez em quando para organizar algumas partidas, apenas por diversão.
 
-Currently, two official plugins are available:
+Há algum tempo atrás nós organizamos um mini torneio que reuniu 4 equipes e, jogando entre si, definimos um campeão. Só que, por termos poucas equipes e poucas pessoas
+jogando conosco o campeonato acabou sendo bem curto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pensando em expandir a comunidade, atrair novos membros e aumentar a competitividade eu tive a ideia de criar o site oficial do CBALOL.
 
-## React Compiler
+# O que é esse site?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ele nada mais é do que a página ofical da nossa comunidade.
 
-## Expanding the ESLint configuration
+Nele eu reúni todo o conteúdo possível para você conhecer tudo que nós construímos e fazemos no decorrer dos jogos.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Criei notícias, tabelas, listas de times e muito mais, confira:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+<div align="center">
+<img alt="Home" src="./src/public/print.png" />
+</div>
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O objetivo aqui nada mais foi do que diversão e estudo de linguagem Front-End. Por ser feito apenas pela diversão é um projeto bem simples, sem banco de dados ou linguagem Back-End.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# Como faço parte?
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+É bem simples, apenas <a href="https://hwnrique.github.io/campeonato-bagres-league-of-legends/">click aqui</a>, conheça o site e, se ainda se interessar, na aba de "Siga" é só clicar no link, que você será redirecionado ao grupo do Whatsapp!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Gostou? Me segue no LinkedIn: www.linkedin.com/in/carlos-henrique-292397305
