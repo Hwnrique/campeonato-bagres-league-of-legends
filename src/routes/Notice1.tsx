@@ -8,7 +8,7 @@ const Notice1 = () => {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
-              <span className="text-red-600">[URGENTE]:</span> Show de Felícia e
+              <span className="text-cyan-400">[NEWS]:</span> Show de Felícia e
               discussões internas marcam a abertura do CBALOL.
             </h2>
             <p className="text-xl p-2">
