@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import spiritLogo from "../public/spiritNotice.jpeg";
+import brasil94off from "../public/brasil94off.png"
 
 const Notice1 = () => {
   return (
@@ -8,66 +8,26 @@ const Notice1 = () => {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Spirit Edge fecha
-              elenco para o próximo torneio do CBALOL
+              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta crise interna e encerra atividades!
             </h2>
             <p className="text-xl p-2">
-              Fontes próximas à organização confirmaram que, nas últimas horas,
-              a Spirit Edge finalizou sua janela de transferências e definiu
-              oficialmente sua line-up para o próximo split do{" "}
-              <span className="text-cyan-600">CBALOL</span>.
+              De última hora, a equipe Brasil 94 (B94), formada por ADC de
+              Aluguel, Cartman, Raltzx, BTPXMatheusX e BladeBlack04, não
+              disputará mais o próximo split do{" "}
+              <span className="text-cyan-400">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
-              A escalação que disputará o campeonato é a seguinte:
-            </p>
-            <ul className="p-4">
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Top:
-                </span>
-                Rua 6
-              </li>
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Jungle:
-                </span>
-                Kamerayda
-              </li>
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Mid:
-                </span>
-                Saburu
-              </li>
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Adc:
-                </span>
-                Raives
-              </li>
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Suporte:
-                </span>
-                Belador
-              </li>
-              <li className="text-xl">
-                <span className="text-cyan-600 text-xl font-bold p-2">
-                  Reserva:
-                </span>
-                Power
-              </li>
-            </ul>
-            <p className="text-xl p-2">
-              Além dos cinco titulares, a equipe contará com o reserva Power —
-              reforçando o elenco para a competição.
+              Segundo fontes próximas à organização, o time enfrentou uma{" "}
+              <span className="text-cyan-400">grave</span>{" "}
+              falha de comunicação durante o processo de contratação de novos
+              jogadores — atletas que, por questões internas, acabaram não
+              participando do restante da competição.
             </p>
             <p className="text-xl p-2">
-              Com a definição do elenco, a <span className="text-cyan-600">Spirit Edge</span> demonstra que chega com
-              tudo para o próximo split do <span className="text-cyan-600">CBALOL</span>, apostando em uma formação que
-              mistura experiência e estratégia. A expectativa agora é acompanhar
-              o desempenho da equipe nas próximas etapas, à medida que a
-              temporada se aproxima.
+              Com o colapso da line-up e o fim imediato das operações, Matheus e
+              Libni, fundadores do projeto, agora estão oficialmente sem equipe
+              para o segundo split e buscam caminhos para o futuro no cenário
+              competitivo.
             </p>
             <p className="px-2">
               Continue acompanhando todas as atualizações da janela de
@@ -81,7 +41,7 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">
             <img
               className="rounded-md shadow-xl max-w-full h-auto"
-              src={spiritLogo}
+              src={brasil94off}
               alt="MrCasper"
             />
           </div>

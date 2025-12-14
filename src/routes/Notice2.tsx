@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import felicia from "../public/felicia.png";
+import copa64 from "../public/copa64.png";
 
 const Notice1 = () => {
   return (
@@ -8,28 +8,27 @@ const Notice1 = () => {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Show de Felícia e
-              discussões internas marcam a abertura do CBALOL.
+              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
+              estão de volta ao campeonato!
             </h2>
             <p className="text-xl p-2">
-              O dia 09/12 marcou o início oficial do{" "}
-              <span className="text-cyan-600">CBALOL</span> com o primeiro
-              confronto da temporada. Após um longo atraso na partida entre Las
-              Noches e Spirit Edge, o duelo finalmente aconteceu e trouxe
-              momentos de tensão, reviravoltas e destaque individual.
+              Após o encerramento da antiga organização Brasil 94, Matheus e
+              Libni estão oficialmente de volta ao competitivo. A dupla
+              confirmou sua entrada na equipe{" "}
+              <span className="text-cyan-600">Manos Metralha</span>, que
+              disputará o próximo split do{" "}
+              <span className="text-cyan-600">CBALOL</span>.
             </p>
             <p className="text-xl p-2">
-              Mesmo com uma atuação insistente de Raives, ADC da Spirit Edge,
-              que tentou conduzir sua equipe rumo à vitória, não foi o
-              suficiente. A <span className="text-cyan-600">Las Noches</span>{" "}
-              encontrou seu ritmo no mid game, encaixou boas lutas e garantiu o
-              triunfo na estreia.
+              Além deles, a line-up deve ser composta pelo top laner Heitor,
+              pelo mid laner Gabis e pelo suporte João Vitor, formando um elenco
+              que promete atrair <span className="text-cyan-600">atenção</span>{" "}
+              nos bastidores do cenário.
             </p>
             <p className="text-xl p-2">
-              Após o término da partida,{" "}
-              <span className="text-cyan-600">Felícia</span> (yumekooJ) foi
-              eleita <span className="text-yellow-500">MVP</span> da primeira
-              disputa do campeonato, coroando sua performance sólida e decisiva.
+              A organização demonstra grande expectativa para a temporada e
+              afirma estar focada em disputar o{" "}
+              <span className="text-cyan-600">título</span> do campeonato.
             </p>
             <p className="px-2">
               Continue acompanhando todas as atualizações da janela de
@@ -43,8 +42,8 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">
             <img
               className="rounded-md shadow-xl max-w-full h-auto"
-              src={felicia}
-              alt="MrCasper"
+              src={copa64}
+              alt="ManosMetralha"
             />
           </div>
         </div>

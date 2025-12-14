@@ -3,13 +3,13 @@ import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
-import spiritNotice from "../public/spiritNotice.jpeg";
 import brasil94off from "../public/brasil94off.png";
 import bbcnotice from "../public/bbcnotice.jpeg";
 import bbc from "../public/bbc.png";
 import felicia from "../public/felicia.png";
-import metralha from "../public/metralha.png"
-import copa64 from "../public/copa64.png"
+import metralha from "../public/metralha.png";
+import copa64 from "../public/copa64.png";
+import lasbbc from "../public/lasbcc1.jpeg";
 
 const Home = () => {
   return (
@@ -36,20 +36,42 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={copa64}
+            src={lasbbc}
             alt="Spirit"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni estão de volta ao campeonato!
+              <span className="text-cyan-400">[NEWS]:</span> Las Noches assume a
+              liderança; Manos Metralha fecham o dia com 0-2.
             </h3>
             <p className="text-white text-sm">
-              Após o encerramento da antiga organização Brasil 94, Matheus e Libni estão oficialmente de volta ao competitivo. A dupla...
+              O sábado de CBALOL foi marcado por dois confrontos decisivos e
+              resultados que já começam a desenhar o cenário da...
             </p>
           </div>
         </Link>
         <Link
           to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={copa64}
+            alt="Copa64"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
+              estão de volta ao campeonato!
+            </h3>
+            <p className="text-white text-sm">
+              Após o encerramento da antiga organização Brasil 94, Matheus e
+              Libni estão oficialmente de volta ao competitivo. A dupla...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -69,7 +91,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -89,7 +111,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -106,26 +128,6 @@ const Home = () => {
               De última hora, a equipe Brasil 94 (B94), formada por ADC de
               Aluguel, Cartman, Raltzx, BTPXMatheusX e BladeBlack04, não
               disputará...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={spiritNotice}
-            alt="Spirit"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Spirit Edge fecha
-              elenco para o próximo torneio do CBALOL
-            </h3>
-            <p className="text-white text-sm">
-              Fontes próximas à organização confirmaram que, nas últimas horas,
-              a Spirit Edge finalizou...
             </p>
           </div>
         </Link>
@@ -146,6 +148,12 @@ const Home = () => {
           </tr>
           <tr>
             <td className="border p-2 text-sky-800 font-bold">Las Noches</td>
+            <td className="border p-2 font-bold">2</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-yellow-400 font-bold">
+              Black Belt Clan
+            </td>
             <td className="border p-2 font-bold">1</td>
           </tr>
           <tr>
@@ -153,20 +161,14 @@ const Home = () => {
             <td className="border p-2 font-bold">0</td>
           </tr>
           <tr>
-            <td className="border p-2 text-yellow-400 font-bold">
-              Black Belt Clan
+            <td className="border p-2 text-violet-300 font-bold">
+              Spirit Edge
             </td>
             <td className="border p-2 font-bold">0</td>
           </tr>
           <tr>
             <td className="border p-2 text-orange-500 font-bold">
               Manos Metralha
-            </td>
-            <td className="border p-2 font-bold">0</td>
-          </tr>
-          <tr>
-            <td className="border p-2 text-violet-300 font-bold">
-              Spirit Edge
             </td>
             <td className="border p-2 font-bold">0</td>
           </tr>
@@ -342,7 +344,7 @@ const Home = () => {
               <ul>
                 <li>
                   <span className="text-orange-500 p-1 font-bold">Top:</span>
-                  in a trance#xyz
+                  ???
                 </li>
                 <li>
                   <span className="text-orange-500 p-1 font-bold">Jungle:</span>
