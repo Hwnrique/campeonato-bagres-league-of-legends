@@ -42,7 +42,7 @@ const Notice1 = () => {
             </p>
             <p className="text-xl p-2">
               Com os resultados do dia, os Manos Metralhas iniciam o campeonato
-              com o pé esquerdo. Além do 0–2 na rodada, a equipe ainda enfrenta
+              com o pé esquerdo. Além do 0–2 na rodada, a equipe ainda enfrenta{" "}
               <span className="text-cyan-600">problemas</span> internos.
             </p>
             <p className="text-xl p-2">
@@ -65,7 +65,7 @@ const Notice1 = () => {
               .
             </p>
           </div>
-          <div className="w-full md:w-2/5 flex justify-center md:justify-start px-4">
+          <div className="w-full md:w-7/12 flex justify-center md:justify-start px-4">
             <img
               className="rounded-md shadow-xl max-w-full h-auto"
               src={lasbbc}
