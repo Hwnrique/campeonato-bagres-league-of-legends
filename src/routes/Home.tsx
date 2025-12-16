@@ -3,13 +3,13 @@ import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
-import brasil94off from "../public/brasil94off.png";
 import bbcnotice from "../public/bbcnotice.jpeg";
 import bbc from "../public/bbc.png";
 import felicia from "../public/felicia.png";
 import metralha from "../public/metralha.png";
 import copa64 from "../public/copa64.png";
 import lasbbc from "../public/lasbcc1.jpeg";
+import feliciaoff from "../public/feliciaoff.png";
 
 const Home = () => {
   return (
@@ -36,8 +36,28 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={lasbbc}
+            src={feliciaoff}
             alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Felícia não seguirá
+              mais no CBLOL.
+            </h3>
+            <p className="text-white text-sm">
+              Com duas vitórias no campeonato e uma performance incrível em
+              ambas as partidas, yumekooJ...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={lasbbc}
+            alt="LasBBC"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -51,7 +71,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -71,7 +91,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -91,7 +111,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -107,27 +127,6 @@ const Home = () => {
             <p className="text-white text-sm">
               A movimentação nos bastidores do competitivo brasileiro de League
               of Legends segue intensa. Nos últimos dias...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={brasil94off}
-            alt="Brasil94"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-red-600">[URGENTE]:</span> B94 enfrenta
-              crise interna e encerra atividades!
-            </h3>
-            <p className="text-white text-sm">
-              De última hora, a equipe Brasil 94 (B94), formada por ADC de
-              Aluguel, Cartman, Raltzx, BTPXMatheusX e BladeBlack04, não
-              disputará...
             </p>
           </div>
         </Link>
