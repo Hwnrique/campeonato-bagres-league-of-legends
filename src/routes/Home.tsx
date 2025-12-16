@@ -42,7 +42,7 @@ const Home = () => {
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> Felícia não seguirá
-              mais no CBLOL.
+              mais no CBALOL.
             </h3>
             <p className="text-white text-sm">
               Com duas vitórias no campeonato e uma performance incrível em

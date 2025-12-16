@@ -9,7 +9,7 @@ const Notice1 = () => {
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-2">
               <span className="text-cyan-400">[NEWS]:</span> Felícia não seguirá
-              mais no CBLOL.
+              mais no CBALOL.
             </h2>
             <p className="text-xl p-2">
               Com duas <span className="text-cyan-600">vitórias</span> no
