@@ -31,7 +31,7 @@ const Notice1 = () => {
               eleita <span className="text-yellow-500">MVP</span> da primeira
               disputa do campeonato, coroando sua performance sólida e decisiva.
             </p>
-            <p className="px-2">
+            <p className="px-2 md:mt-32">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
               <Link className="text-cyan-600" to={"/"}>

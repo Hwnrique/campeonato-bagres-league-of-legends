@@ -29,7 +29,7 @@ const Notice1 = () => {
             <p className="text-xl p-2">
               Mais informações sobre serão divulgadas futuramente.
             </p>
-            <p className="px-2">
+            <p className="px-2 md:mt-32">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
               <Link className="text-cyan-600" to={"/"}>

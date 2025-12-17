@@ -72,7 +72,7 @@ const Notice1 = () => {
               Belt Clan mira alto e se prepara para buscar seu primeiro título
               de <span className="text-cyan-600">CBALOL</span> já no próximo split.
             </p>
-            <p className="px-2">
+            <p className="px-2 md:mt-32">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
               <Link className="text-cyan-600" to={"/"}>

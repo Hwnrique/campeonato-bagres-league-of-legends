@@ -56,7 +56,7 @@ const Notice1 = () => {
               Já a Las Noches sai <span className="text-cyan-600">fortalecida</span> da rodada, demonstrando poder de
               reação e assumindo protagonismo logo no início do CBALOL.
             </p>
-            <p className="px-2">
+            <p className="px-2 md:mt-32">
               Continue acompanhando todas as atualizações da janela de
               transferências em{" "}
               <Link className="text-cyan-600" to={"/"}>
