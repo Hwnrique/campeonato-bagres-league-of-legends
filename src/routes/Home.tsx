@@ -3,13 +3,13 @@ import logo from "../public/logo.png";
 import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
-import bbcnotice from "../public/bbcnotice.jpeg";
 import bbc from "../public/bbc.png";
 import felicia from "../public/felicia.png";
 import metralha from "../public/metralha.png";
 import copa64 from "../public/copa64.png";
 import lasbbc from "../public/lasbcc1.jpeg";
 import feliciaoff from "../public/feliciaoff.png";
+import kameda from "../public/kameda.png";
 
 const Home = () => {
   return (
@@ -36,8 +36,28 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
-            src={feliciaoff}
+            src={kameda}
             alt="Spirit"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> Estreia assombrosa
+              da Equipe CÃO e show da Spirit no CBALOL.
+            </h3>
+            <p className="text-white text-sm">
+              Na noite desta quarta-feira, a Equipe CÃO fez sua aguardada
+              estreia no CBALOL em confronto contra a Spirit...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
+            src={feliciaoff}
+            alt="FeliciaOff"
           />
           <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
             <h3 className="text-white text-xl font-bold mb-2">
@@ -51,7 +71,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -71,7 +91,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -91,7 +111,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -107,26 +127,6 @@ const Home = () => {
             <p className="text-white text-sm">
               O dia 09/12 marcou o início oficial do CBALOL com o primeiro
               confronto da temporada. Após um longo atraso na partida...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={bbcnotice}
-            alt="BBC"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Black Belt Clan
-              Entra na Disputa pelo Próximo CBALOL
-            </h3>
-            <p className="text-white text-sm">
-              A movimentação nos bastidores do competitivo brasileiro de League
-              of Legends segue intensa. Nos últimos dias...
             </p>
           </div>
         </Link>
@@ -156,13 +156,13 @@ const Home = () => {
             <td className="border p-2 font-bold">1</td>
           </tr>
           <tr>
-            <td className="border p-2 text-red-500 font-bold">CAO</td>
-            <td className="border p-2 font-bold">0</td>
-          </tr>
-          <tr>
             <td className="border p-2 text-violet-300 font-bold">
               Spirit Edge
             </td>
+            <td className="border p-2 font-bold">1</td>
+          </tr>
+          <tr>
+            <td className="border p-2 text-red-500 font-bold">CAO</td>
             <td className="border p-2 font-bold">0</td>
           </tr>
           <tr>
@@ -231,7 +231,7 @@ const Home = () => {
               <ul>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Top:</span>
-                  Dragão Econômico
+                  mrcasper15
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Jungle:</span>
@@ -243,11 +243,11 @@ const Home = () => {
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Adc:</span>
-                  yumekooJ
+                  Dragão Econômico
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Suporte:</span>
-                  mrcasper
+                  ???
                 </li>
               </ul>
             </div>
