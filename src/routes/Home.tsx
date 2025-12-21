@@ -4,12 +4,12 @@ import cao from "../public/cao.png";
 import notches from "../public/noches.png";
 import spirit from "../public/spirit.png";
 import bbc from "../public/bbc.png";
-import felicia from "../public/felicia.png";
 import metralha from "../public/metralha.png";
 import copa64 from "../public/copa64.png";
 import lasbbc from "../public/lasbcc1.jpeg";
 import feliciaoff from "../public/feliciaoff.png";
 import kameda from "../public/kameda.png";
+import bbcwin from "../public/BBCWIN.png"
 
 const Home = () => {
   return (
@@ -36,6 +36,26 @@ const Home = () => {
         >
           <img
             className="w-full h-full object-cover"
+            src={bbcwin}
+            alt="BBC"
+          />
+          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
+            <h3 className="text-white text-xl font-bold mb-2">
+              <span className="text-cyan-400">[NEWS]:</span> BBC vence a Spirit
+              Edge no CBALOL.
+            </h3>
+            <p className="text-white text-sm">
+              Na última semana, mais um confronto movimentou o CBALOL. Em
+              partida válida pela rodada, a Black Belt Clan...
+            </p>
+          </div>
+        </Link>
+        <Link
+          to="/notice2"
+          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
+        >
+          <img
+            className="w-full h-full object-cover"
             src={kameda}
             alt="Spirit"
           />
@@ -51,7 +71,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice2"
+          to="/notice3"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -71,7 +91,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice3"
+          to="/notice4"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -91,7 +111,7 @@ const Home = () => {
           </div>
         </Link>
         <Link
-          to="/notice4"
+          to="/notice5"
           className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
         >
           <img
@@ -107,26 +127,6 @@ const Home = () => {
             <p className="text-white text-sm">
               Após o encerramento da antiga organização Brasil 94, Matheus e
               Libni estão oficialmente de volta ao competitivo. A dupla...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={felicia}
-            alt="Felicia"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Show de Felícia e
-              discussões internas marcam a abertura do CBALOL.
-            </h3>
-            <p className="text-white text-sm">
-              O dia 09/12 marcou o início oficial do CBALOL com o primeiro
-              confronto da temporada. Após um longo atraso na partida...
             </p>
           </div>
         </Link>
@@ -153,7 +153,7 @@ const Home = () => {
             <td className="border p-2 text-yellow-400 font-bold">
               Black Belt Clan
             </td>
-            <td className="border p-2 font-bold">1</td>
+            <td className="border p-2 font-bold">2</td>
           </tr>
           <tr>
             <td className="border p-2 text-violet-300 font-bold">
