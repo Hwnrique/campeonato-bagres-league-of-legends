@@ -91,7 +91,7 @@ const Home = () => {
   "
                 />
                 <div className="flex flex-col justify-center p-3">
-                  <h4 className="text-white text-xl font-semibold line-clamp-2">
+                  <h4 className="text-white md:text-xl font-semibold line-clamp-2">
                     {item.title}
                   </h4>
                   <span className="text-sm text-cyan-400 mt-1">
