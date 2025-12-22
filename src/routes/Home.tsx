@@ -39,7 +39,7 @@ const Home = () => {
         <h2 className="text-white mt-16 text-3xl">Últimas notícias</h2>
       </div>
       {/* notices */}
-      <div className="mx-auto mt-16 w-11/12">
+      <div className="mx-auto mt-16 w-11/12 md:w-4/5 md:max-h-[700px]">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-2">
           <div className="lg:col-span-3">
             <Swiper
@@ -50,7 +50,7 @@ const Home = () => {
               navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 5000, disableOnInteraction: false }}
-              className="w-full md:w-4/5 h-[300px] md:h-[600px] rounded-lg overflow-hidden"
+              className="w-full md:w-full h-[300px] md:h-[700px] rounded-lg overflow-hidden"
             >
               {slideNews.map((item) => (
                 <SwiperSlide key={item.id}>
@@ -74,29 +74,41 @@ const Home = () => {
               ))}
             </Swiper>
           </div>
-          <div className="flex flex-col gap-2 h-[300px] md:h-[600px]">
+          <div className="flex flex-col gap-2 h-[300px] md:h-[700px]">
             {sideNews.map((item) => (
               <Link
                 key={item.id}
                 to={`/notice/${item.id}`}
-                className="group flex gap-3 flex-1 bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition md:-ml-24"
+                className="relative flex-1 rounded-lg overflow-hidden group"
               >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="
-    w-24 md:w-52 h-full object-cover
-    transition-transform duration-300 ease-out
-    group-hover:scale-105
-  "
-                />
-                <div className="flex flex-col justify-center p-3">
-                  <h4 className="text-white md:text-xl font-semibold line-clamp-2">
-                    {item.title}
-                  </h4>
-                  <span className="text-sm text-cyan-400 mt-1">
-                    Leia mais →
-                  </span>
+                <div className="flex lg:hidden gap-3 h-full bg-zinc-900 hover:bg-zinc-800 transition">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="w-24 h-full object-cover"
+                  />
+                  <div className="flex flex-col justify-center p-3">
+                    <h4 className="text-white text-base font-semibold line-clamp-2">
+                      {item.title}
+                    </h4>
+                    <span className="text-sm text-cyan-400 mt-1">
+                      Leia mais →
+                    </span>
+                  </div>
+                </div>
+                <div className="relative hidden lg:flex h-full">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className="relative z-10 flex items-end h-full p-4">
+                    <h4 className="text-white text-lg md:text-xl font-bold leading-tight line-clamp-2">
+                      <span className="text-cyan-400">[NEWS]:</span>{" "}
+                      {item.title}
+                    </h4>
+                  </div>
                 </div>
               </Link>
             ))}
