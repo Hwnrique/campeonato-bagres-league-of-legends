@@ -27,16 +27,16 @@ const Home = () => {
     <>
       {/* head */}
       <div className="w-full mt-10 text-center">
-        <h1 className="text-white text-5xl">
+        <h1 className="text-white md:text-5xl text-3xl p-8">
           Seja <span className="text-cyan-600 font-bold">Bem-vindo</span> ao
           site oficial do
         </h1>
         <img
-          className="md:h-96 md:w-[500px] w-[300px] h-64 mx-auto mt-4 mb-4"
+          className="md:h-96 md:w-[500px] h-44 w-1/2 mx-auto mt-4 mb-4"
           src={logo}
           alt="logo"
         />
-        <h2 className="text-white mt-16 text-3xl">Últimas notícias</h2>
+        <h2 className="text-white mt-16 md:text-3xl text-2xl">Últimas notícias</h2>
       </div>
       {/* notices */}
       <div className="mx-auto mt-16 w-11/12 md:w-4/5 md:max-h-[700px]">
@@ -117,7 +117,7 @@ const Home = () => {
       </div>
       {/* tables */}
       <div className="w-full text-white text-center">
-        <h2 className="text-white mt-20 text-3xl mb-10">
+        <h2 className="text-white mt-20 md:text-3xl text-2xl mb-10">
           Tabela do Campeonato
         </h2>
         <table className="mx-auto text-center border">
@@ -159,7 +159,7 @@ const Home = () => {
       </div>
       {/* teams */}
       <div className="w-full mt-16 text-center flex flex-col">
-        <h2 className="text-white mt-16 text-3xl">
+        <h2 className="text-white mt-16 md:text-3xl text-2xl">
           Equipes que estão disputando o{" "}
           <span className="text-cyan-600 font-bold">CBALOL 2026</span>
         </h2>
