@@ -1,17 +1,28 @@
 import { Link } from "react-router-dom";
-import logo from "../public/logo.png";
-import cao from "../public/cao.png";
-import notches from "../public/noches.png";
-import spirit from "../public/spirit.png";
-import bbc from "../public/bbc.png";
-import metralha from "../public/metralha.png";
-import copa64 from "../public/copa64.png";
-import lasbbc from "../public/lasbcc1.jpeg";
-import feliciaoff from "../public/feliciaoff.png";
-import kameda from "../public/kameda.png";
-import bbcwin from "../public/BBCWIN.png"
+import logo from "../assets/logo.png";
+import cao from "../assets/cao.png";
+import notches from "../assets/noches.png";
+import spirit from "../assets/spirit.png";
+import bbc from "../assets/bbc.png";
+import metralha from "../assets/metralha.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/effect-fade";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { news } from "../data/news";
 
 const Home = () => {
+  const orderedNews = [...news].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
+  const slideNews = orderedNews.slice(0, 5);
+  const sideNews = orderedNews.slice(5, 8);
+
   return (
     <>
       {/* head */}
@@ -21,115 +32,76 @@ const Home = () => {
           site oficial do
         </h1>
         <img
-          className="h-96 w-[500px] mx-auto mt-4 mb-4"
+          className="md:h-96 md:w-[500px] w-[300px] h-64 mx-auto mt-4 mb-4"
           src={logo}
           alt="logo"
         />
         <h2 className="text-white mt-16 text-3xl">Últimas notícias</h2>
       </div>
       {/* notices */}
-      <div className="w-11/12 mx-auto mt-16 rounded-lg h-auto md:h-[400px] flex flex-col md:flex-row justify-center overflow-hidden gap-2">
-        <Link
-          to="/notice1"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-          aria-label="RUMOR: Time definido? - Emíus"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={bbcwin}
-            alt="BBC"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> BBC vence a Spirit
-              Edge no CBALOL.
-            </h3>
-            <p className="text-white text-sm">
-              Na última semana, mais um confronto movimentou o CBALOL. Em
-              partida válida pela rodada, a Black Belt Clan...
-            </p>
+      <div className="mx-auto mt-16 w-11/12">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-2">
+          <div className="lg:col-span-3">
+            <Swiper
+              modules={[Autoplay, EffectFade, Navigation, Pagination]}
+              effect="fade"
+              slidesPerView={1}
+              loop
+              navigation
+              pagination={{ clickable: true }}
+              autoplay={{ delay: 5000, disableOnInteraction: false }}
+              className="w-full md:w-4/5 h-[300px] md:h-[600px] rounded-lg overflow-hidden"
+            >
+              {slideNews.map((item) => (
+                <SwiperSlide key={item.id}>
+                  <Link
+                    to={`/notice/${item.id}`}
+                    className="relative block w-full h-full"
+                  >
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                      <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
+                        <span className="text-cyan-400">[NEWS]:</span>{" "}
+                        {item.title}
+                      </h2>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
-        </Link>
-        <Link
-          to="/notice2"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={kameda}
-            alt="Spirit"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Estreia assombrosa
-              da Equipe CÃO e show da Spirit no CBALOL.
-            </h3>
-            <p className="text-white text-sm">
-              Na noite desta quarta-feira, a Equipe CÃO fez sua aguardada
-              estreia no CBALOL em confronto contra a Spirit...
-            </p>
+          <div className="flex flex-col gap-2 h-[300px] md:h-[600px]">
+            {sideNews.map((item) => (
+              <Link
+                key={item.id}
+                to={`/notice/${item.id}`}
+                className="group flex gap-3 flex-1 bg-zinc-900 rounded-lg overflow-hidden hover:bg-zinc-800 transition md:-ml-24"
+              >
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="
+    w-24 md:w-52 h-full object-cover
+    transition-transform duration-300 ease-out
+    group-hover:scale-105
+  "
+                />
+                <div className="flex flex-col justify-center p-3">
+                  <h4 className="text-white text-xl font-semibold line-clamp-2">
+                    {item.title}
+                  </h4>
+                  <span className="text-sm text-cyan-400 mt-1">
+                    Leia mais →
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
-        </Link>
-        <Link
-          to="/notice3"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={feliciaoff}
-            alt="FeliciaOff"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Felícia não seguirá
-              mais no CBALOL.
-            </h3>
-            <p className="text-white text-sm">
-              Com duas vitórias no campeonato e uma performance incrível em
-              ambas as partidas, yumekooJ...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice4"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={lasbbc}
-            alt="LasBBC"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Las Noches assume a
-              liderança; Manos Metralha fecham o dia com 0-2.
-            </h3>
-            <p className="text-white text-sm">
-              O sábado de CBALOL foi marcado por dois confrontos decisivos e
-              resultados que já começam a desenhar o cenário da...
-            </p>
-          </div>
-        </Link>
-        <Link
-          to="/notice5"
-          className="relative flex-1 h-[300px] md:h-full overflow-hidden transition-all duration-500 ease-in-out hover:flex-[2] cursor-pointer block"
-        >
-          <img
-            className="w-full h-full object-cover"
-            src={copa64}
-            alt="Copa64"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-4">
-            <h3 className="text-white text-xl font-bold mb-2">
-              <span className="text-cyan-400">[NEWS]:</span> Matheus e Libni
-              estão de volta ao campeonato!
-            </h3>
-            <p className="text-white text-sm">
-              Após o encerramento da antiga organização Brasil 94, Matheus e
-              Libni estão oficialmente de volta ao competitivo. A dupla...
-            </p>
-          </div>
-        </Link>
+        </div>
       </div>
       {/* tables */}
       <div className="w-full text-white text-center">

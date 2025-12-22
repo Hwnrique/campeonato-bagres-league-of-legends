@@ -16,7 +16,7 @@ Nele eu reúni todo o conteúdo possível para você conhecer tudo que nós cons
 Criei notícias, tabelas, listas de times e muito mais, confira:
 
 <div align="center">
-<img alt="Home" src="./src/public/print.png" />
+<img alt="Home" src="./src/assets/print.png" />
 </div>
 
 O objetivo aqui nada mais foi do que diversão e estudo de linguagem Front-End. Por ser feito apenas pela diversão é um projeto bem simples, sem banco de dados ou linguagem Back-End.
