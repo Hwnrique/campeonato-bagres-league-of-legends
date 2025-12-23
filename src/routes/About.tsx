@@ -62,7 +62,7 @@ const About = () => {
           comunidade.
         </p>
 
-        <span className="text-cyan-600 font-bold text-xl">Muito Obrigado!</span>
+        <p className="mt-10"><span className="text-cyan-600 font-bold text-4xl">Muito Obrigado!</span></p>
       </main>
     </>
   );

@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <>
       {/* head */}
-      <div className="w-full mt-10 text-center">
+      <div className="w-full md:mt-10 text-center">
         <h1 className="text-white md:text-5xl text-3xl p-8">
           Seja <span className="text-cyan-600 font-bold">Bem-vindo</span> ao
           site oficial do
@@ -36,10 +36,12 @@ const Home = () => {
           src={logo}
           alt="logo"
         />
-        <h2 className="text-white mt-16 md:text-3xl text-2xl">Últimas notícias</h2>
+        <h2 className="text-white mt-16 md:text-3xl text-2xl">
+          Últimas notícias
+        </h2>
       </div>
       {/* notices */}
-      <div className="mx-auto mt-16 w-11/12 md:w-4/5 md:max-h-[700px]">
+      <div className="mx-auto mt-16 w-11/12 lg:w-10/12 xl:w-4/5 max-w-[1280px]">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:gap-2">
           <div className="lg:col-span-3">
             <Swiper
@@ -50,7 +52,7 @@ const Home = () => {
               navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 5000, disableOnInteraction: false }}
-              className="w-full md:w-full h-[300px] md:h-[700px] rounded-lg overflow-hidden"
+              className="w-full h-[260px] sm:h-[320px] md:h-[550px] rounded-lg overflow-hidden"
             >
               {slideNews.map((item) => (
                 <SwiperSlide key={item.id}>
@@ -64,7 +66,7 @@ const Home = () => {
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
-                      <h2 className="text-white text-2xl md:text-3xl font-bold mb-6">
+                      <h2 className="text-white text-lg md:text-3xl font-bold mb-6">
                         <span className="text-cyan-400">[NEWS]:</span>{" "}
                         {item.title}
                       </h2>
@@ -74,7 +76,7 @@ const Home = () => {
               ))}
             </Swiper>
           </div>
-          <div className="flex flex-col gap-2 h-[300px] md:h-[700px]">
+          <div className="flex flex-col gap-2 h-[300px] md:h-full">
             {sideNews.map((item) => (
               <Link
                 key={item.id}
@@ -91,7 +93,7 @@ const Home = () => {
                     <h4 className="text-white text-base font-semibold line-clamp-2">
                       {item.title}
                     </h4>
-                    <span className="text-sm text-cyan-400 mt-1">
+                    <span className="text-sm text-cyan-400 mt-1 font-bold">
                       Leia mais →
                     </span>
                   </div>
@@ -179,15 +181,16 @@ const Home = () => {
               <ul>
                 <li>
                   <span className="text-red-500 p-1 font-bold">Top:</span>
-                  FearKillua
+                  Fear Killua#2640
+
                 </li>
                 <li>
                   <span className="text-red-500 p-1 font-bold">Jungle:</span>
-                  JDMDJ BR
+                  JDMDJ BR#br1
                 </li>
                 <li>
                   <span className="text-red-500 p-1 font-bold">Mid:</span>
-                  Raruh
+                  Raruh7#1611
                 </li>
                 <li>
                   <span className="text-red-500 p-1 font-bold">Adc:</span>
@@ -215,23 +218,23 @@ const Home = () => {
               <ul>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Top:</span>
-                  mrcasper15
+                  Dieguinho59TRK#7203
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Jungle:</span>
-                  Sentry
+                  Sentry#Br88
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Mid:</span>
-                  pspspspspspsps
+                  pspspspspspsps#BRZ1
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Adc:</span>
-                  Dragão Econômico
+                  Dragão Econômico#DRACO
                 </li>
                 <li>
                   <span className="text-sky-800 p-1 font-bold">Suporte:</span>
-                  ???
+                  mrcasper15#4327
                 </li>
               </ul>
             </div>

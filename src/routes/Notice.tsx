@@ -55,7 +55,7 @@ export default function Notice() {
           </div>
           <div className="w-full md:w-1/2 justify-center md:justify-start px-4">
             <img
-              className="rounded-md shadow-xl max-w-full h-auto"
+              className="rounded-md shadow-xl max-w-full md:h-[600px] h-auto"
               src={notice.image}
               alt={notice.title}
             />
