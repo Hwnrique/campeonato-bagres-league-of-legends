@@ -67,7 +67,7 @@ const Home = () => {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
                       <h2 className="text-white text-lg md:text-3xl font-bold mb-6">
-                        <span className="text-cyan-400">[NEWS]:</span>{" "}
+                        <span className="text-cyan-400">{item.tag}</span>{" "}
                         {item.title}
                       </h2>
                     </div>
@@ -107,7 +107,7 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                   <div className="relative z-10 flex items-end h-full p-4">
                     <h4 className="text-white text-lg md:text-xl font-bold leading-tight line-clamp-2">
-                      <span className="text-cyan-400">[NEWS]:</span>{" "}
+                      <span className="text-cyan-400">{item.tag}</span>{" "}
                       {item.title}
                     </h4>
                   </div>

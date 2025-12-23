@@ -1,5 +1,6 @@
 export interface News {
     id: number,
+    tag: string,
     title: string,
     content1: string,
     content2: string,

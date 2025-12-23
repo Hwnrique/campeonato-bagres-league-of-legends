@@ -11,6 +11,7 @@ import demacia from "../assets/demacia.png";
 export const news: News[] = [
   {
     id: 1,
+    tag: "[NEWS]",
     title: "BBC vence a Spirit Edge no CBALOL",
     content1:
       "Na última semana, mais um confronto movimentou o CBALOL. Em partida válida pela rodada, a Black Belt Clan (BBC) enfrentou a Spirit Edge e mostrou ampla superioridade do início ao fim, dominando completamente o jogo e garantindo uma vitória convincente.",
@@ -23,6 +24,7 @@ export const news: News[] = [
   },
   {
     id: 2,
+    tag: "[NEWS]",
     title: "Estreia assombrosa da Equipe CÃO e show da Spirit no CBALOL.",
     content1:
       "Na noite desta quarta-feira, a Equipe CÃO fez sua aguardada estreia no CBALOL em confronto contra a Spirit Edge.",
@@ -37,6 +39,7 @@ export const news: News[] = [
   },
   {
     id: 3,
+    tag: "[NEWS]",
     title: "Felícia não seguirá mais no CBALOL.",
     content1:
       "Com duas vitórias no campeonato e uma performance incrível em ambas as partidas, yumekooJ (Felícia) não seguirá mais no campeonato e se despede também do seu time: Las Noches.",
@@ -49,6 +52,7 @@ export const news: News[] = [
   },
   {
     id: 4,
+    tag: "[NEWS]",
     title:
       "Las Noches assume a liderança; Manos Metralha fecham o dia com 0-2.",
     content1:
@@ -66,6 +70,7 @@ export const news: News[] = [
   },
   {
     id: 5,
+    tag: "[NEWS]",
     title: "Matheus e Libni estão de volta ao campeonato!",
     content1:
       "Após o encerramento da antiga organização Brasil 94, Matheus e Libni estão oficialmente de volta ao competitivo. A dupla confirmou sua entrada na equipe Manos Metralha, que disputará o próximo split do CBALOL.",
@@ -78,6 +83,7 @@ export const news: News[] = [
   },
   {
     id: 6,
+    tag: "[NEWS]",
     title: "Show de Felícia e discussões internas marcam a abertura do CBALOL",
     content1:
       "O dia 09/12 marcou o início oficial do CBALOL com o primeiro confronto da temporada. Após um longo atraso na partida entre Las Noches e Spirit Edge, o duelo finalmente aconteceu e trouxe momentos de tensão, reviravoltas e destaque individual.",
@@ -90,6 +96,7 @@ export const news: News[] = [
   },
   {
     id: 7,
+    tag: "[NEWS]",
     title: "Black Belt Clan Entra na Disputa pelo Próximo CBALOL",
     content1:
       "A movimentação nos bastidores do competitivo brasileiro de League of Legends segue intensa. Nos últimos dias, mais uma organização manifestou interesse em integrar o CBALOL: a Black Belt Clan, fundada por Enzo “Magalhães”. A equipe, que já estruturou sua line-up para o próximo split, chega com ambição e promete disputar espaço entre as grandes forças do campeonato.",
@@ -103,6 +110,7 @@ export const news: News[] = [
   },
   {
     id: 8,
+    tag: "[NEWS]",
     title:
       "Bem-vindos a Demacia! O que o patch novo do League of Legends tem para o CBALOL?",
     content1:
