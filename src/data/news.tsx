@@ -7,6 +7,7 @@ import copa64 from "../assets/copa64.png";
 import bbcnotice from "../assets/bbcnotice.jpeg";
 import felicia from "../assets/felicia.png";
 import demacia from "../assets/demacia.png";
+import dieguinho from "../assets/dieguinho.png"
 
 export const news: News[] = [
   {
@@ -120,5 +121,17 @@ export const news: News[] = [
       "Você tem fé nos nossos jogadores? pois continue acompanhando e veja o desenrolar de toda a história.",
     image: demacia,
     date: "2025-12-21",
+  },
+  {
+    id: 9,
+    tag: "[NEWS]",
+    title:
+      "Diego chega à Las Noches, equipe ajusta elenco visando evolução no campeonato",
+    content1: "A equipe Las Noches anunciou uma mudança em seu elenco para a sequência do CBALOL. O jogador Diego passa a integrar oficialmente o time, ocupando a vaga anteriormente pertencente a Felícia. A alteração faz parte do planejamento da organização visando ajustes estratégicos para o andamento da competição.",
+    content2: "Diego chega à Las Noches com a expectativa de agregar novas dinâmicas ao estilo de jogo da equipe. A comissão técnica aposta na adaptação rápida do atleta ao elenco e no impacto positivo que sua entrada pode gerar nas próximas partidas do campeonato. A mudança ocorre em um momento importante da competição, no qual cada decisão pode influenciar diretamente os resultados.",
+    content3: "Além da chegada de Diego, a Las Noches conta atualmente com dois jogadores reservas em seu elenco: Bruno e Gabriel. Ambos permanecem à disposição da equipe para eventuais mudanças e ajustes táticos ao longo do campeonato, reforçando a profundidade do plantel e oferecendo mais opções para a comissão técnica.",
+    content4: "Com o elenco atualizado, a Las Noches segue sua preparação para os próximos confrontos do CBALOL, buscando estabilidade e evolução dentro do torneio. A estreia de Diego e a utilização dos reservas devem ser acompanhadas de perto pelo público e pelos analistas, atentos ao desempenho da equipe nas próximas rodadas.",
+    image: dieguinho,
+    date: "2025-12-23",
   },
 ];

@@ -45,8 +45,7 @@ export default function Notice() {
               {notice.content6}
             </p>
             <p className="px-2 md:mt-32 hidden lg:block">
-              Continue acompanhando todas as atualizações da janela de
-              transferências em{" "}
+             Continue acompanhando todas as atualizações no{" "}
               <Link className="text-cyan-600" to={"/"}>
                 nosso site
               </Link>
@@ -61,14 +60,12 @@ export default function Notice() {
             />
             <p className="px-2 text-xs -mt-8 text-center hidden lg:flex text-white-500">{notice.date}</p>
           </div>
-          <p className="px-2 text-xs -mt-8 text-center block lg:hidden text-gray-500">{notice.date}</p>
-          <p className="px-2 md:mt-32 block lg:hidden">
-              Continue acompanhando todas as atualizações da janela de
-              transferências em{" "}
+          <p className="py-2 text-xs -mt-8 text-center block lg:hidden text-gray-500">{notice.date}</p>
+          <p className="px-10 md:mt-32 block lg:hidden text-center">
+              Continue acompanhando todas as atualizações no{" "}
               <Link className="text-cyan-600" to={"/"}>
                 nosso site
               </Link>
-              .
             </p>
         </div>
       </main>
