@@ -1,15 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import ToggleMenu from "./ToggleMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const location = useLocation();
 
-  const showMenu = () => {
-    setTimeout(() => {
-      setMenu(prev => !prev);
-    }, 150);
+  // Fecha o menu automaticamente ao mudar de rota
+  useEffect(() => {
+    setMenu(false);
+  }, [location.pathname]);
+
+  const toggleMenu = () => {
+    setMenu((prev) => !prev);
   };
 
   return (
@@ -17,7 +21,7 @@ const Navbar = () => {
       <Link to="/">
         <img className="h-16 w-24" src={logo} alt="logo" />
       </Link>
-      <ToggleMenu onClick={showMenu} />
+      <ToggleMenu active={menu} onClick={toggleMenu} />
       <ul
         className={`
           absolute top-full left-0 w-full

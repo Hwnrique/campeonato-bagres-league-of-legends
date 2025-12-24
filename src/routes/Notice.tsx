@@ -24,7 +24,7 @@ export default function Notice() {
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-6 -mt-6">
-              <span className="text-cyan-400">[NEWS]:</span> {notice.title}
+              <span className="text-cyan-400">{notice.tag}:</span> {notice.title}
             </h2>
             <p className="text-xl p-2">
               {notice.content1}

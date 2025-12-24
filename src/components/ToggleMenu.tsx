@@ -1,20 +1,12 @@
-import { useState } from "react";
-
 type ToggleMenuProps = {
-  onClick?: () => void;
+  active: boolean;
+  onClick: () => void;
 };
 
-const ToggleMenu = ({ onClick }: ToggleMenuProps) => {
-  const [active, setActive] = useState(false);
-
-  const animationBtn = () => {
-    setActive(prev => !prev);
-    onClick?.();
-  };
-
+const ToggleMenu = ({ active, onClick }: ToggleMenuProps) => {
   return (
     <button
-      onClick={animationBtn}
+      onClick={onClick}
       className="
         w-[50px] h-[50px]
         rounded-md
