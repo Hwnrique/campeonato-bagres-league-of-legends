@@ -29,14 +29,14 @@ const Home = () => {
       <div className="w-full md:mt-10 text-center">
         <h1 className="text-white md:text-5xl text-3xl p-8">
           Seja <span className="text-cyan-600 font-bold">Bem-vindo</span> ao
-          site oficial do
+          site oficial do <span className="text-cyan-600 lg:hidden font-bold">CBALOL</span>
         </h1>
         <img
-          className="md:h-96 md:w-[500px] h-44 w-1/2 mx-auto mt-4 mb-4"
+          className="md:h-96 md:w-[500px] h-44 w-1/2 mx-auto mt-4 mb-4 hidden lg:block"
           src={logo}
           alt="logo"
         />
-        <h2 className="text-white mt-16 md:text-3xl text-2xl">
+        <h2 className="text-white md:mt-16 mt-10 md:text-3xl text-2xl">
           Últimas notícias
         </h2>
       </div>
@@ -161,11 +161,11 @@ const Home = () => {
       </div>
       {/* teams */}
       <div className="w-full mt-16 text-center flex flex-col">
-        <h2 className="text-white mt-16 md:text-3xl text-2xl">
+        <h2 className="text-white mt-16 md:text-3xl text-2xl px-8 lg:p-0">
           Equipes que estão disputando o{" "}
           <span className="text-cyan-600 font-bold">CBALOL 2026</span>
         </h2>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-6">
+        <div className="grid grid-cols-2 mx-auto lg:flex md:flex-row justify-center items-center mt-8 gap-6">
           <div className="relative group cursor-pointer">
             <img
               className="w-40 h-40 sm:w-52 sm:h-52 md:w-72 md:h-72 transition duration-300 group-hover:scale-110 rounded-xl"
@@ -358,7 +358,7 @@ const Home = () => {
       {/* others */}
       <div className="w-full flex flex-col md:flex-row justify-center items-center gap-6 mt-10">
         <div className="w-full md:w-1/3 text-start p-8 md:p-12 rounded-lg">
-          <h2 className="text-start text-white text-2xl">
+          <h2 className="lg:text-start text-white text-2xl text-center">
             Ranking CBALOL 2025🏆
           </h2>
           <ul className="text-white mt-8">
