@@ -7,7 +7,6 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const location = useLocation();
 
-  // Fecha o menu automaticamente ao mudar de rota
   useEffect(() => {
     setMenu(false);
   }, [location.pathname]);
