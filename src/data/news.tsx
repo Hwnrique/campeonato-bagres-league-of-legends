@@ -8,7 +8,6 @@ import bbcnotice from "../assets/bbcnotice.jpeg";
 import felicia from "../assets/felicia.png";
 import demacia from "../assets/demacia.png";
 import dieguinho from "../assets/dieguinho.png"
-import natalina from "../assets/merrychristimas.png"
 
 export const news: News[] = [
   {
@@ -134,16 +133,5 @@ export const news: News[] = [
     content4: "Com o elenco atualizado, a Las Noches segue sua preparação para os próximos confrontos do CBALOL, buscando estabilidade e evolução dentro do torneio. A estreia de Diego e a utilização dos reservas devem ser acompanhadas de perto pelo público e pelos analistas, atentos ao desempenho da equipe nas próximas rodadas.",
     image: dieguinho,
     date: "2025-12-23",
-  },
-  {
-    id: 10,
-    tag: " ",
-    title:
-      "A equipe do CBALOL deseja a todos um Feliz Natal.",
-    content1: " ",
-    content2: " ",
-    content3: " ",
-    image: natalina,
-    date: "2025-12-24",
   },
 ];
