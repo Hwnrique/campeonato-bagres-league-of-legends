@@ -55,7 +55,7 @@ export default function Notice() {
               src={notice.image}
               alt={notice.title}
             />
-            <p className="px-2 text-xs -mt-8 text-center hidden lg:flex text-white-500">{notice.date}</p>
+            <p className="px-2 text-xs -mt-8 hidden lg:flex lg:absolute lg:mt-0 text-gray-500">{notice.date}</p>
           </div>
           <p className="py-2 text-xs -mt-8 text-center block lg:hidden text-gray-500">{notice.date}</p>
           <p className="px-10 md:mt-32 block lg:hidden text-center">

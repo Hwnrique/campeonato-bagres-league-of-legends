@@ -11,6 +11,7 @@ export interface News {
     content6?: string,
     content7?: string,
     image: string,
+    image2?: string,
     date: string,
     hasGradient: boolean
 }
