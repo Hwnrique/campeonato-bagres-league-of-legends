@@ -23,7 +23,7 @@ export default function Notice() {
      <main className="w-full text-white">
         <div className="flex flex-col md:flex-row justify-around mt-16 gap-8 md:gap-0">
           <div className="w-full md:w-2/5 px-4">
-            <h2 className="text-white text-3xl font-bold mb-6 -mt-6">
+            <h2 className="text-white text-3xl font-bold mb-6 -mt-6 lg:mt-0">
               <span className="text-cyan-400">{notice.tag}</span> {notice.title}
               {notice.subTitle}
             </h2>
@@ -39,18 +39,14 @@ export default function Notice() {
             <p className="text-xl p-2">
               {notice.content4}
             </p>
-            <p className="text-xl p-2">
+            <p className="text-xl p-2 block lg:hidden">
               {notice.content5}
             </p>
-            <p className="text-xl p-2">
+            <p className="text-xl p-2 block lg:hidden">
               {notice.content6}
             </p>
-            <p className="px-2 md:mt-32 hidden lg:block">
-             Continue acompanhando todas as atualizações no{" "}
-              <Link className="text-cyan-600" to={"/"}>
-                nosso site
-              </Link>
-              .
+            <p className="text-xl p-2 block lg:hidden">
+              {notice.content7}
             </p>
           </div>
           <div className="w-full md:w-1/2 justify-center md:justify-start px-4">
@@ -69,6 +65,19 @@ export default function Notice() {
               </Link>
             </p>
         </div>
+        <div className="hidden lg:block w-full text-start p-16 mx-auto">
+          <p className="text-xl p-2">{notice.content5}</p>
+          <p className="text-xl p-2">{notice.content6}</p>
+          <p className="text-xl p-2">{notice.content7}</p>
+          <p className="px-2 md:mt-32 hidden lg:block text-center">
+             Continue acompanhando todas as atualizações no{" "}
+              <Link className="text-cyan-600" to={"/"}>
+                nosso site
+              </Link>
+              .
+            </p>
+        </div>
+        
       </main>
     </>
   );
