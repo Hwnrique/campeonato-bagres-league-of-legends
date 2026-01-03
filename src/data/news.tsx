@@ -8,6 +8,7 @@ import bbcnotice from "../assets/bbcnotice.jpeg";
 import felicia from "../assets/felicia.png";
 import demacia from "../assets/demacia.png";
 import dieguinho from "../assets/dieguinho.png"
+import cbalol26 from "../assets/cbalol26.png"
 
 export const news: News[] = [
   {
@@ -22,6 +23,7 @@ export const news: News[] = [
       "Com o resultado, a Black Belt Clan segue demonstrando força na competição e se consolida como uma das equipes mais sólidas do campeonato.",
     image: bbcnews,
     date: "2025-12-20",
+    hasGradient: true
   },
   {
     id: 2,
@@ -37,6 +39,7 @@ export const news: News[] = [
       "Já a Equipe CÃO inicia sua trajetória no campeonato com o pé esquerdo e agora terá a missão de ajustar sua estratégia e buscar evolução nas próximas rodadas para se manter competitiva ao longo do torneio.",
     image: kameda,
     date: "2025-12-19",
+    hasGradient: true
   },
   {
     id: 3,
@@ -50,6 +53,7 @@ export const news: News[] = [
       "A organização demonstra agradecimento e apoio em uma possível volta, a jogadora sai muito aplaudida.",
     image: feliciaoff,
     date: "2025-12-18",
+    hasGradient: true
   },
   {
     id: 4,
@@ -68,6 +72,7 @@ export const news: News[] = [
       "Segundo fontes, durante a segunda partida, o top laner In Trancer teria se desentendido com seus companheiros, se estressado e abandonado a partida em andamento, culminando em um disband na line-up. Já a Las Noches sai fortalecida da rodada, demonstrando poder de reação e assumindo protagonismo logo no início do CBALOL.",
     image: lasbbc,
     date: "2025-12-17",
+    hasGradient: true
   },
   {
     id: 5,
@@ -81,6 +86,7 @@ export const news: News[] = [
       "A organização demonstra grande expectativa para a temporada e afirma estar focada em disputar o título do campeonato.",
     image: copa64,
     date: "2025-12-16",
+    hasGradient: true
   },
   {
     id: 6,
@@ -94,6 +100,7 @@ export const news: News[] = [
       "Após o término da partida, Félicia foi eleita MVP da primeira disputa do campeonato, coroando sua performance sólida e decisiva.",
     image: felicia,
     date: "2025-12-15",
+    hasGradient: true
   },
   {
     id: 7,
@@ -108,6 +115,7 @@ export const news: News[] = [
     content4: "Com um projeto recém-anunciado, mas cheio de confiança, a Black Belt Clan mira alto e se prepara para buscar seu primeiro título de CBALOL já no próximo split.",
     image: bbcnotice,
     date: "2025-12-14",
+    hasGradient: true
   },
   {
     id: 8,
@@ -121,6 +129,7 @@ export const news: News[] = [
       "Você tem fé nos nossos jogadores? pois continue acompanhando e veja o desenrolar de toda a história.",
     image: demacia,
     date: "2025-12-21",
+    hasGradient: true
   },
   {
     id: 9,
@@ -133,5 +142,23 @@ export const news: News[] = [
     content4: "Com o elenco atualizado, a Las Noches segue sua preparação para os próximos confrontos do CBALOL, buscando estabilidade e evolução dentro do torneio. A estreia de Diego e a utilização dos reservas devem ser acompanhadas de perto pelo público e pelos analistas, atentos ao desempenho da equipe nas próximas rodadas.",
     image: dieguinho,
     date: "2025-12-23",
+    hasGradient: true
+  },
+  {
+    id: 10,
+    tag: "",
+    title:
+      "",
+    subTitle: "Resumo do CBALOL 2026",
+    content1: "O ano de 2026 começou, e com ele cresce a expectativa pelo retorno do Campeonato dos Bagres League of Legends (CBALOL). Após uma breve pausa, a competição está prestes a voltar, e nada melhor do que relembrar tudo o que aconteceu até aqui antes da retomada das partidas.",
+    content2: "Até o momento, a liderança do campeonato é dividida entre Las Noches e Black Belt Clan, que tiveram um início impecável na competição. A Las Noches venceu seus dois primeiros confrontos, superando a Spirit Edge e os Manos Metralhas, enquanto a Black Belt Clan também manteve 100% de aproveitamento ao derrotar os Manos Metralhas e a própria Spirit Edge. As duas equipes ainda se enfrentarão, em um duelo direto que promete ser decisivo para a definição do topo da tabela.",
+    content3: "Apesar do bom desempenho dentro de jogo, a Las Noches enfrenta um desafio fora dos servidores: a saída de Felícia “Yumeko”, que anunciou uma pausa na carreira, deixando o campeonato. Ainda assim, a equipe segue firme na disputa, com confrontos importantes pela frente contra a Equipe CÃO e a Black Belt Clan.",
+    content4: "A Spirit Edge vive uma campanha marcada por oscilações. A equipe estreou com derrota diante da Las Noches, reagiu ao vencer a Equipe CÃO, mas acabou sofrendo sua derrota mais dura até aqui contra a Black Belt Clan. Com um retrospecto de uma vitória e duas derrotas, o próximo confronto contra os Manos Metralhas se torna decisivo na briga por uma vaga nos Playoffs.",
+    content5: "Atual campeã do CBALOL, a Equipe CÃO ainda não conseguiu engrenar na competição. A equipe disputou apenas uma partida antes da pausa e acabou superada pela Spirit Edge, acumulando, até o momento, o pior desempenho do campeonato. Com jogos restantes contra Las Noches, Manos Metralhas e Black Belt Clan, a equipe tradicional precisará reagir rapidamente para continuar viva na disputa por uma vaga nos Playoffs.",
+    content6: "Já os Manos Metralhas vivem o momento mais delicado do CBALOL. Em dois jogos disputados, a equipe sofreu derrotas para a Las Noches e para a Black Belt Clan, ainda sem conquistar vitórias. Dessa forma, os confrontos contra a Equipe CÃO e a Spirit Edge se tornaram decisivos, e bons resultados são obrigatórios para manter o sonho de classificação aos Playoffs.",
+    content7: "Com o retorno do CBALOL se aproximando, as equipes entram na reta final da fase classificatória, disputando seus últimos jogos antes dos Playoffs.",
+    image: cbalol26,
+    date: "2026-01-02",
+    hasGradient: false
   },
 ];

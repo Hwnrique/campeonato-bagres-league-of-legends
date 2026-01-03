@@ -25,6 +25,7 @@ export default function Notice() {
           <div className="w-full md:w-2/5 px-4">
             <h2 className="text-white text-3xl font-bold mb-6 -mt-6">
               <span className="text-cyan-400">{notice.tag}</span> {notice.title}
+              {notice.subTitle}
             </h2>
             <p className="text-xl p-2">
               {notice.content1}

@@ -29,7 +29,8 @@ const Home = () => {
       <div className="w-full md:mt-10 text-center">
         <h1 className="text-white md:text-5xl text-3xl p-8">
           Seja <span className="text-cyan-600 font-bold">Bem-vindo</span> ao
-          site oficial do <span className="text-cyan-600 lg:hidden font-bold">CBALOL</span>
+          site oficial do{" "}
+          <span className="text-cyan-600 lg:hidden font-bold">CBALOL</span>
         </h1>
         <img
           className="md:h-96 md:w-[500px] h-44 w-1/2 mx-auto mt-4 mb-4 hidden lg:block"
@@ -65,12 +66,14 @@ const Home = () => {
                       alt={item.title}
                       className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
-                      <h2 className="text-white text-lg md:text-3xl font-bold mb-6">
-                        <span className="text-cyan-400">{item.tag}</span>{" "}
-                        {item.title}
-                      </h2>
-                    </div>
+                    {item.hasGradient && (
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex items-end p-6">
+                        <h2 className="text-white text-lg md:text-3xl font-bold mb-6">
+                          <span className="text-cyan-400">{item.tag}</span>{" "}
+                          {item.title}
+                        </h2>
+                      </div>
+                    )}
                   </Link>
                 </SwiperSlide>
               ))}
@@ -104,7 +107,9 @@ const Home = () => {
                     alt={item.title}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  {item.hasGradient && (
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  )}
                   <div className="relative z-10 flex items-end h-full p-4">
                     <h4 className="text-white text-lg md:text-xl font-bold leading-tight line-clamp-2">
                       <span className="text-cyan-400">{item.tag}</span>{" "}
@@ -182,7 +187,6 @@ const Home = () => {
                 <li>
                   <span className="text-red-500 p-1 font-bold">Top:</span>
                   Fear Killua#2640
-
                 </li>
                 <li>
                   <span className="text-red-500 p-1 font-bold">Jungle:</span>
