@@ -9,6 +9,7 @@ import felicia from "../assets/felicia.png";
 import demacia from "../assets/demacia.png";
 import dieguinho from "../assets/dieguinho.png"
 import cbalol26 from "../assets/cbalol26.png"
+import libniout from "../assets/libniout.png"
 
 export const news: News[] = [
   {
@@ -160,5 +161,21 @@ export const news: News[] = [
     image: cbalol26,
     date: "2026-01-02",
     hasGradient: false
+  },
+  {
+    id: 11,
+    tag: "[NEWS]",
+    title:
+      "Libni deixa a Manos Metralha e gera incerteza sobre participação no CBALOL",
+    subTitle: "Resumo do CBALOL 2026",
+    content1: "O cenário competitivo do CBALOL (Campeonato Bagres de League of Legends) foi surpreendido nesta semana com o anúncio da saída de Libni, jungler da equipe Manos Metralha. O jogador confirmou que não seguirá no elenco e, com isso, não disputará a próxima edição do campeonato.",
+    content2: "A decisão levanta sérias dúvidas sobre a continuidade da Manos Metralha na competição. Antes mesmo da saída de Libni, a equipe já enfrentava dificuldades na formação do elenco, estando sem um Top Laner definido. Agora, com duas posições essenciais em aberto, o futuro do time no CBALOL se torna incerto.",
+    content3: "Até o momento, a organização não se pronunciou oficialmente sobre possíveis substituições ou sobre a manutenção da vaga no campeonato. A comunidade acompanha com atenção os próximos passos da equipe, enquanto cresce a especulação sobre mudanças emergenciais ou até uma possível desistência do torneio.",
+    content4: "Além do impacto esportivo, a saída de Libni também afeta diretamente o planejamento estratégico da Manos Metralha. O jungler era peça importante na comunicação e na leitura de mapa da equipe, funções fundamentais para o desempenho em partidas competitivas. Sua ausência obriga o time a buscar não apenas um substituto técnico, mas alguém que consiga se integrar rapidamente ao restante do elenco.",
+    content5: "Nos bastidores, rumores indicam que a organização vinha enfrentando dificuldades internas, o que pode ter contribuído para as recentes mudanças. No entanto, nenhuma dessas informações foi confirmada oficialmente. A falta de posicionamento público por parte da Manos Metralha aumenta a apreensão dos torcedores, que aguardam esclarecimentos sobre o futuro do projeto.",    
+    content6: "Caso a equipe opte por seguir no CBALOL, o tempo será um fator decisivo. Com o início do campeonato se aproximando, a montagem de um elenco competitivo em curto prazo representa um grande desafio. Enquanto isso, o cenário do torneio segue atento, já que uma possível saída da Manos Metralha pode abrir espaço para alterações na tabela ou até para a entrada de uma nova equipe.",    
+    image: libniout,
+    date: "2026-01-06",
+    hasGradient: true
   },
 ];

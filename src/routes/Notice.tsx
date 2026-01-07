@@ -51,11 +51,11 @@ export default function Notice() {
           </div>
           <div className="w-full md:w-1/2 justify-center md:justify-start px-4">
             <img
-              className="rounded-md shadow-xl max-w-full md:h-[600px] h-auto"
+              className="rounded-md shadow-xl max-w-full md:h-full md:w-full h-auto"
               src={notice.image}
               alt={notice.title}
             />
-            <p className="px-2 text-xs -mt-8 hidden lg:flex lg:absolute lg:mt-0 text-gray-500">{notice.date}</p>
+            <p className="px-2 text-xs -mt-8 hidden lg:flex lg:absolute lg:mt-0 text-gray-500">Notícia criada por Carlos Henrique e Marlos Santos</p>
           </div>
           <p className="py-2 text-xs -mt-8 text-center block lg:hidden text-gray-500">{notice.date}</p>
           <p className="px-10 md:mt-32 block lg:hidden text-center">
@@ -65,7 +65,7 @@ export default function Notice() {
               </Link>
             </p>
         </div>
-        <div className="hidden lg:block w-full text-start p-16 mx-auto">
+        <div className="hidden lg:block w-full text-start p-16 mx-auto -mt-6">
           <p className="text-xl p-2">{notice.content5}</p>
           <p className="text-xl p-2">{notice.content6}</p>
           <p className="text-xl p-2">{notice.content7}</p>
