@@ -39,6 +39,13 @@ export default function Notice() {
             <p className="text-xl p-2">
               {notice.content4}
             </p>
+            <div className="w-full md:w-1/2 justify-center md:justify-start px-4">
+            <img
+              className="rounded-md shadow-xl max-w-full md:hidden mt-8 mb-8 h-auto"
+              src={notice.image2}
+              alt={notice.title}
+            />
+          </div>
             <p className="text-xl p-2 block lg:hidden">
               {notice.content5}
             </p>
@@ -65,9 +72,14 @@ export default function Notice() {
               </Link>
             </p>
         </div>
-        <div className="hidden lg:block w-full text-start p-16 mx-auto -mt-6">
+        <div className="hidden lg:block w-full md:flex text-start p-16 mx-auto -mt-6">
           <p className="text-xl p-2">{notice.content5}</p>
           <p className="text-xl p-2">{notice.content6}</p>
+          <img
+              className="rounded-md shadow-xl hidden md:block max-w-full md:mx-auto md:h-[500px] md:w-1/2 h-auto"
+              src={notice.image2}
+              alt={notice.title}
+            />
           <p className="text-xl p-2">{notice.content7}</p>
           <p className="px-2 md:mt-32 hidden lg:block text-center">
              Continue acompanhando todas as atualizações no{" "}

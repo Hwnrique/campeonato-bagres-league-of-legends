@@ -10,6 +10,8 @@ import demacia from "../assets/demacia.png";
 import dieguinho from "../assets/dieguinho.png"
 import cbalol26 from "../assets/cbalol26.png"
 import libniout from "../assets/libniout.png"
+import table from "../assets/CBALOL-table.png"
+import noticeoofs from "../assets/notice-playoffs.png"
 
 export const news: News[] = [
   {
@@ -177,5 +179,23 @@ export const news: News[] = [
     image: libniout,
     date: "2026-01-06",
     hasGradient: true
+  },
+  {
+    id: 12,
+    tag: "[NEWS]",
+    title:
+      "Iniciam os playoffs do CBALOL 2026",
+    subTitle: "",
+    content1: "Os playoffs do CBALOL finalmente começaram, marcando o momento mais aguardado de todo o campeonato. Depois de uma fase regular cheia de jogos caóticos, picks duvidosos e jogadas geniais inesperadas, agora não existe mais espaço para erro. Cada partida pode ser a última, e a pressão aumenta a cada minuto dentro do Rift.",
+    content2: "A liderança ficou com a Las Noches, que mostrou consistência ao longo do campeonato e terminou em primeiro lugar, garantindo a melhor posição possível para os playoffs. Logo atrás vem a BBC, que também teve uma campanha sólida e chega forte para disputar a upper bracket. As duas equipes carregam o favoritismo, mas sabem que favoritismo não ganha jogo.",
+    content3: "Por estarem na upper bracket, Las Noches e BBC entram com uma vantagem importante: a famosa “segunda chance”. O confronto direto entre elas vale uma vaga imediata na grande final do CBALOL, enquanto o perdedor ainda terá a oportunidade de se recuperar caindo para a lower bracket, mantendo vivo o sonho do título.",
+    content4: "Enquanto isso, a Spirit Edge e a CAO se enfrentam em um duelo decisivo e cruel. Aqui não existe margem para erro: quem perder está automaticamente eliminado do campeonato. É o tipo de jogo que testa não só a mecânica, mas o psicológico dos jogadores, onde qualquer vacilo pode custar toda a temporada.",
+    content5: "O vencedor desse confronto segue para a lower bracket, onde terá pela frente um desafio ainda maior: enfrentar o time derrotado da upper. É o caminho mais difícil, mas também o mais emocionante, já que a lower costuma revelar histórias de superação e viradas improváveis.",    
+    content6: "Esse formato de playoffs deixa tudo ainda mais insano. Times podem cair, se levantar, errar e corrigir, tornando cada série imprevisível. Estratégia, adaptação e sangue frio vão ser tão importantes quanto habilidade individual dentro do jogo.",    
+    content7: "Agora, o CBALOL entra oficialmente em sua fase mais intensa. Os amistosos ficaram para trás, a zoeira dá lugar à concentração e apenas um time vai sair campeão. Preparem o coração, porque os playoffs prometem jogos pegados, rivalidade e muita resenha depois do GG.",    
+    image: noticeoofs,
+    image2: table,
+    date: "2026-01-14",
+    hasGradient: false
   },
 ];
