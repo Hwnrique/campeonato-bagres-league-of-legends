@@ -151,8 +151,8 @@ export const news: News[] = [
     id: 10,
     tag: "",
     title:
-      "",
-    subTitle: "Resumo do CBALOL 2026",
+      "Resumo do CBALOL 2026",
+    subTitle: "",
     content1: "O ano de 2026 começou, e com ele cresce a expectativa pelo retorno do Campeonato dos Bagres League of Legends (CBALOL). Após uma breve pausa, a competição está prestes a voltar, e nada melhor do que relembrar tudo o que aconteceu até aqui antes da retomada das partidas.",
     content2: "Até o momento, a liderança do campeonato é dividida entre Las Noches e Black Belt Clan, que tiveram um início impecável na competição. A Las Noches venceu seus dois primeiros confrontos, superando a Spirit Edge e os Manos Metralhas, enquanto a Black Belt Clan também manteve 100% de aproveitamento ao derrotar os Manos Metralhas e a própria Spirit Edge. As duas equipes ainda se enfrentarão, em um duelo direto que promete ser decisivo para a definição do topo da tabela.",
     content3: "Apesar do bom desempenho dentro de jogo, a Las Noches enfrenta um desafio fora dos servidores: a saída de Felícia “Yumeko”, que anunciou uma pausa na carreira, deixando o campeonato. Ainda assim, a equipe segue firme na disputa, com confrontos importantes pela frente contra a Equipe CÃO e a Black Belt Clan.",
@@ -169,7 +169,7 @@ export const news: News[] = [
     tag: "[NEWS]",
     title:
       "Libni deixa a Manos Metralha e gera incerteza sobre participação no CBALOL",
-    subTitle: "Resumo do CBALOL 2026",
+    subTitle: "",
     content1: "O cenário competitivo do CBALOL (Campeonato Bagres de League of Legends) foi surpreendido nesta semana com o anúncio da saída de Libni, jungler da equipe Manos Metralha. O jogador confirmou que não seguirá no elenco e, com isso, não disputará a próxima edição do campeonato.",
     content2: "A decisão levanta sérias dúvidas sobre a continuidade da Manos Metralha na competição. Antes mesmo da saída de Libni, a equipe já enfrentava dificuldades na formação do elenco, estando sem um Top Laner definido. Agora, com duas posições essenciais em aberto, o futuro do time no CBALOL se torna incerto.",
     content3: "Até o momento, a organização não se pronunciou oficialmente sobre possíveis substituições ou sobre a manutenção da vaga no campeonato. A comunidade acompanha com atenção os próximos passos da equipe, enquanto cresce a especulação sobre mudanças emergenciais ou até uma possível desistência do torneio.",
@@ -182,7 +182,7 @@ export const news: News[] = [
   },
   {
     id: 12,
-    tag: "[NEWS]",
+    tag: "",
     title:
       "Iniciam os playoffs do CBALOL 2026",
     subTitle: "",
