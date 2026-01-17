@@ -75,11 +75,15 @@ export default function Notice() {
         <div className="hidden lg:block w-full md:flex text-start p-16 mx-auto -mt-6">
           <p className="text-xl p-2">{notice.content5}</p>
           <p className="text-xl p-2">{notice.content6}</p>
-          <img
+          {notice.image2 ? (
+            <img
               className="rounded-md shadow-xl hidden md:block max-w-full md:mx-auto md:h-[500px] md:w-1/2 h-auto"
               src={notice.image2}
               alt={notice.title}
             />
+          ) : (
+            " "
+          )}
           <p className="text-xl p-2">{notice.content7}</p>
           <p className="px-2 md:mt-32 hidden lg:block text-center">
              Continue acompanhando todas as atualizações no{" "}
