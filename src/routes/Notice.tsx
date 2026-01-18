@@ -40,11 +40,15 @@ export default function Notice() {
               {notice.content4}
             </p>
             <div className="w-full md:w-1/2 justify-center md:justify-start px-4">
-            <img
+           {notice.image2 ? (
+             <img
               className="rounded-md shadow-xl max-w-full md:hidden mt-8 mb-8 h-auto"
               src={notice.image2}
               alt={notice.title}
             />
+           ) : (
+            ""
+           )}
           </div>
             <p className="text-xl p-2 block lg:hidden">
               {notice.content5}
